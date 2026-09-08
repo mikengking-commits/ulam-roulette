@@ -62,13 +62,17 @@ README.md                    setup, deploy, data schema, known limits
 1. ~~`git init`, commit, create the GitHub repo, push, enable Pages.~~ Done —
    `mikengking-commits/ulam-roulette`, public, served from `main` at
    `https://mikengking-commits.github.io/ulam-roulette/`.
-2. Create a Firebase project (id `ulam-roulette`) + Firestore database (production mode).
-3. `cp firebase-config.example.js firebase-config.js`, fill in the web config, commit + push it.
-4. Optional: `firebase deploy --only firestore:rules` once `firebase-tools` is installed and
-   you've run `firebase login`.
-5. Open the Pages URL on both phones, Add to Home Screen.
+2. ~~Create a Firebase project (id `ulam-roulette`) + Firestore database
+   (production mode).~~ Done.
+3. ~~`cp firebase-config.example.js firebase-config.js`, fill in the web
+   config, commit + push it.~~ Done — committed 2026-09-09.
+4. ~~Deploy `firestore.rules`.~~ Done — pasted directly into the console's
+   Rules tab and published (no `firebase-tools` install needed). Verified
+   against the live REST API: reads and writes to `meals` both succeed.
+5. Open the Pages URL on both phones, Add to Home Screen. **This one's
+   still outstanding.**
 
-Steps 2–4 need a browser and your Firebase account, so they're yours to do.
+Everything else is live and verified end-to-end.
 
 ## Verification already done
 
