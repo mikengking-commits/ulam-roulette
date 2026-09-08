@@ -1,0 +1,22 @@
+# firebase-config.js is committed (not ignored): this app is hosted on GitHub
+# Pages, which serves exactly the committed tree, so the config has to be in
+# git for the shared meal log to work. That's fine — Firebase web config is
+# public by design (see the comment in firebase-config.example.js).
+
+# Firebase CLI
+.firebase/
+.firebaserc
+firebase-debug.log
+firestore-debug.log
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# macOS AppleDouble sidecars. The drive this lives on is exFAT, so Finder writes a
+# ._<name> resource-fork file beside every real file. They are not part of the project
+# and must never be committed.
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd

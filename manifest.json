@@ -1,0 +1,17 @@
+{
+  "name": "Ulam Roulette",
+  "short_name": "Ulam",
+  "description": "A dinner randomiser for Singapore that screens every dish for hidden seafood and tells you what to say at the stall.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#141009",
+  "theme_color": "#141009",
+  "categories": ["food", "lifestyle", "utilities"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

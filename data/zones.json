@@ -1,0 +1,503 @@
+[
+ {
+  "id": "woodlands",
+  "name": "Woodlands Interchange",
+  "lat": 1.4369,
+  "lng": 103.7865,
+  "venues": [
+   {
+    "name": "Causeway Point",
+    "detail": "B1 Food Junction + Level 5 restaurants",
+    "line": "NS"
+   },
+   {
+    "name": "Woodlands Xchange",
+    "detail": "Bus interchange food hall",
+    "line": "TE"
+   },
+   {
+    "name": "888 Plaza Food Centre",
+    "detail": "Old-school hawker, 2 min walk",
+    "line": "NS"
+   },
+   {
+    "name": "Marsiling Mall Hawker Centre",
+    "detail": "One stop west",
+    "line": "NS"
+   }
+  ]
+ },
+ {
+  "id": "admiralty",
+  "name": "Admiralty",
+  "lat": 1.4406,
+  "lng": 103.801,
+  "venues": [
+   {
+    "name": "Kampung Admiralty Hawker Centre",
+    "detail": "676 Woodlands Dr 71 — the good one",
+    "line": "NS"
+   },
+   {
+    "name": "Sembawang Shopping Centre",
+    "detail": "Food court + casual chains",
+    "line": "NS"
+   }
+  ]
+ },
+ {
+  "id": "yishun",
+  "name": "Yishun",
+  "lat": 1.4294,
+  "lng": 103.835,
+  "venues": [
+   {
+    "name": "Northpoint City",
+    "detail": "Two food courts, big restaurant spread",
+    "line": "NS"
+   },
+   {
+    "name": "Yishun Park Hawker Centre",
+    "detail": "Newer, sit-outdoors hawker",
+    "line": "NS"
+   },
+   {
+    "name": "Chong Pang Market & Food Centre",
+    "detail": "Late-night Malay + Chinese",
+    "line": "NS"
+   }
+  ]
+ },
+ {
+  "id": "sembawang",
+  "name": "Sembawang",
+  "lat": 1.4491,
+  "lng": 103.82,
+  "venues": [
+   {
+    "name": "Sun Plaza",
+    "detail": "Food court + mall restaurants",
+    "line": "NS"
+   },
+   {
+    "name": "Sembawang Hills Food Centre",
+    "detail": "Zi char and supper stalls",
+    "line": "NS"
+   }
+  ]
+ },
+ {
+  "id": "amk",
+  "name": "Ang Mo Kio",
+  "lat": 1.3699,
+  "lng": 103.8496,
+  "venues": [
+   {
+    "name": "AMK Hub",
+    "detail": "Food Republic + full restaurant floor",
+    "line": "NS"
+   },
+   {
+    "name": "Chong Boon Market & Food Centre",
+    "detail": "Blk 453A, solid hawker",
+    "line": "NS"
+   },
+   {
+    "name": "Broadway Plaza",
+    "detail": "Coffeeshops and casual eats",
+    "line": "NS"
+   }
+  ]
+ },
+ {
+  "id": "bishan",
+  "name": "Bishan",
+  "lat": 1.351,
+  "lng": 103.8485,
+  "venues": [
+   {
+    "name": "Junction 8",
+    "detail": "B1 food court, Level 4 restaurants",
+    "line": "CC"
+   },
+   {
+    "name": "Bishan Bus Interchange",
+    "detail": "Coffeeshops on Bishan St 13",
+    "line": "NS"
+   }
+  ]
+ },
+ {
+  "id": "toapayoh",
+  "name": "Toa Payoh",
+  "lat": 1.3324,
+  "lng": 103.8471,
+  "venues": [
+   {
+    "name": "HDB Hub",
+    "detail": "Food court + chains at the interchange",
+    "line": "NS"
+   },
+   {
+    "name": "Toa Payoh Lor 8 Market & Food Centre",
+    "detail": "Blk 210, classic hawker",
+    "line": "NS"
+   },
+   {
+    "name": "Toa Payoh Vista Market",
+    "detail": "Lor 4, breakfast to supper",
+    "line": "NS"
+   }
+  ]
+ },
+ {
+  "id": "novena",
+  "name": "Novena",
+  "lat": 1.3204,
+  "lng": 103.8438,
+  "venues": [
+   {
+    "name": "Velocity @ Novena Square",
+    "detail": "Restaurant cluster",
+    "line": "NS"
+   },
+   {
+    "name": "United Square",
+    "detail": "Family-friendly food floor",
+    "line": "NS"
+   },
+   {
+    "name": "Whampoa Makan Place",
+    "detail": "Two blocks of hawker, 10 min",
+    "line": "NS"
+   }
+  ]
+ },
+ {
+  "id": "orchard",
+  "name": "Orchard",
+  "lat": 1.304,
+  "lng": 103.8318,
+  "venues": [
+   {
+    "name": "ION Orchard — Food Opera",
+    "detail": "B4 hawker-style food hall",
+    "line": "NS"
+   },
+   {
+    "name": "Takashimaya B2",
+    "detail": "Japanese + Asian food hall",
+    "line": "NS"
+   },
+   {
+    "name": "Far East Plaza",
+    "detail": "Cheap, chaotic, good",
+    "line": "NS"
+   },
+   {
+    "name": "313@Somerset",
+    "detail": "B3 Food Republic",
+    "line": "NS"
+   }
+  ]
+ },
+ {
+  "id": "bugis",
+  "name": "Bugis / City Hall",
+  "lat": 1.3006,
+  "lng": 103.8559,
+  "venues": [
+   {
+    "name": "Bugis Junction & Bugis+",
+    "detail": "Two malls of restaurants",
+    "line": "EW"
+   },
+   {
+    "name": "Albert Centre Market",
+    "detail": "Blk 270, proper hawker",
+    "line": "DT"
+   },
+   {
+    "name": "Suntec City",
+    "detail": "Food court + huge restaurant spread",
+    "line": "CC"
+   },
+   {
+    "name": "Golden Mile Complex area",
+    "detail": "Thai food strip",
+    "line": "EW"
+   }
+  ]
+ },
+ {
+  "id": "chinatown",
+  "name": "Chinatown",
+  "lat": 1.2847,
+  "lng": 103.844,
+  "venues": [
+   {
+    "name": "Chinatown Complex Food Centre",
+    "detail": "260+ stalls, the biggest in SG",
+    "line": "NE"
+   },
+   {
+    "name": "Maxwell Food Centre",
+    "detail": "Tourist-famous but still good",
+    "line": "DT"
+   },
+   {
+    "name": "People's Park Complex",
+    "detail": "Regional Chinese, cheap",
+    "line": "NE"
+   }
+  ]
+ },
+ {
+  "id": "tanjongpagar",
+  "name": "Tanjong Pagar / CBD",
+  "lat": 1.2765,
+  "lng": 103.8459,
+  "venues": [
+   {
+    "name": "Amoy Street Food Centre",
+    "detail": "Best lunch hawker in the CBD",
+    "line": "EW"
+   },
+   {
+    "name": "Lau Pa Sat",
+    "detail": "Satay street from 7pm",
+    "line": "DT"
+   },
+   {
+    "name": "Tanjong Pagar Plaza Market",
+    "detail": "Blk 6, quieter and cheaper",
+    "line": "EW"
+   },
+   {
+    "name": "Tanjong Pagar Road",
+    "detail": "Korean BBQ strip",
+    "line": "EW"
+   }
+  ]
+ },
+ {
+  "id": "queenstown",
+  "name": "Queenstown / Redhill",
+  "lat": 1.2948,
+  "lng": 103.806,
+  "venues": [
+   {
+    "name": "Alexandra Village Food Centre",
+    "detail": "Blk 120, excellent range",
+    "line": "EW"
+   },
+   {
+    "name": "ABC Brickworks Food Centre",
+    "detail": "Blk 6 Jln Bukit Merah",
+    "line": "EW"
+   },
+   {
+    "name": "Anchorpoint",
+    "detail": "Casual mall restaurants",
+    "line": "EW"
+   }
+  ]
+ },
+ {
+  "id": "jurongeast",
+  "name": "Jurong East",
+  "lat": 1.333,
+  "lng": 103.7422,
+  "venues": [
+   {
+    "name": "Westgate",
+    "detail": "Restaurant floors + food court",
+    "line": "EW"
+   },
+   {
+    "name": "JEM",
+    "detail": "Level 4/5 restaurants",
+    "line": "NS"
+   },
+   {
+    "name": "IMM",
+    "detail": "Outlet mall with a big food spread",
+    "line": "EW"
+   },
+   {
+    "name": "Yuhua Village Market",
+    "detail": "Blk 347, honest hawker",
+    "line": "EW"
+   }
+  ]
+ },
+ {
+  "id": "clementi",
+  "name": "Clementi",
+  "lat": 1.3151,
+  "lng": 103.7654,
+  "venues": [
+   {
+    "name": "Clementi Mall",
+    "detail": "Level 5 food court + restaurants",
+    "line": "EW"
+   },
+   {
+    "name": "Clementi 448 Market & Food Centre",
+    "detail": "Above the bus interchange",
+    "line": "EW"
+   }
+  ]
+ },
+ {
+  "id": "beautyworld",
+  "name": "Bukit Timah / Beauty World",
+  "lat": 1.341,
+  "lng": 103.7757,
+  "venues": [
+   {
+    "name": "Beauty World Food Centre",
+    "detail": "Second floor, old-school",
+    "line": "DT"
+   },
+   {
+    "name": "Bukit Timah Market & Food Centre",
+    "detail": "Blk 51 Upper Bukit Timah",
+    "line": "DT"
+   }
+  ]
+ },
+ {
+  "id": "serangoon",
+  "name": "Serangoon / Hougang",
+  "lat": 1.3496,
+  "lng": 103.873,
+  "venues": [
+   {
+    "name": "NEX",
+    "detail": "Two food courts + restaurant floors",
+    "line": "NE"
+   },
+   {
+    "name": "Chomp Chomp Food Centre",
+    "detail": "Serangoon Gardens, evenings only",
+    "line": "CC"
+   },
+   {
+    "name": "Hougang Mall",
+    "detail": "Food court + chains",
+    "line": "NE"
+   }
+  ]
+ },
+ {
+  "id": "punggol",
+  "name": "Punggol / Sengkang",
+  "lat": 1.4052,
+  "lng": 103.9024,
+  "venues": [
+   {
+    "name": "Waterway Point",
+    "detail": "Big restaurant spread by the water",
+    "line": "NE"
+   },
+   {
+    "name": "Compass One",
+    "detail": "Sengkang, food court + restaurants",
+    "line": "NE"
+   },
+   {
+    "name": "Punggol Hawker Centre",
+    "detail": "Blk 269B Punggol Field",
+    "line": "NE"
+   }
+  ]
+ },
+ {
+  "id": "tampines",
+  "name": "Tampines",
+  "lat": 1.3546,
+  "lng": 103.9437,
+  "venues": [
+   {
+    "name": "Tampines Mall & Century Square",
+    "detail": "Back-to-back restaurant floors",
+    "line": "EW"
+   },
+   {
+    "name": "Our Tampines Hub",
+    "detail": "Big hawker centre + food court",
+    "line": "DT"
+   },
+   {
+    "name": "Tampines Round Market",
+    "detail": "Blk 137, morning to night",
+    "line": "EW"
+   }
+  ]
+ },
+ {
+  "id": "bedok",
+  "name": "Bedok",
+  "lat": 1.324,
+  "lng": 103.93,
+  "venues": [
+   {
+    "name": "Bedok Interchange Hawker Centre",
+    "detail": "Right at the bus interchange",
+    "line": "EW"
+   },
+   {
+    "name": "Bedok Mall",
+    "detail": "B2 food court + restaurants",
+    "line": "EW"
+   },
+   {
+    "name": "Fengshan (Bedok 85) Market",
+    "detail": "Famous for supper",
+    "line": "EW"
+   }
+  ]
+ },
+ {
+  "id": "pasirris",
+  "name": "Pasir Ris",
+  "lat": 1.3721,
+  "lng": 103.9493,
+  "venues": [
+   {
+    "name": "White Sands",
+    "detail": "Food court + casual restaurants",
+    "line": "EW"
+   },
+   {
+    "name": "Pasir Ris Central Hawker Centre",
+    "detail": "110 Pasir Ris Central",
+    "line": "EW"
+   }
+  ]
+ },
+ {
+  "id": "katong",
+  "name": "Katong / Joo Chiat",
+  "lat": 1.305,
+  "lng": 103.902,
+  "venues": [
+   {
+    "name": "i12 Katong",
+    "detail": "Restaurant floors, newly redone",
+    "line": "TE"
+   },
+   {
+    "name": "East Coast Road strip",
+    "detail": "Peranakan + Malay shophouses",
+    "line": "TE"
+   },
+   {
+    "name": "Old Airport Road Food Centre",
+    "detail": "15 min away, worth it",
+    "line": "CC"
+   }
+  ]
+ }
+]

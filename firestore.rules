@@ -1,0 +1,91 @@
+rules_version = '2';
+
+// Ulam Roulette — Firestore security rules.
+//
+// THE HONEST TRADE-OFF, STATED UP FRONT
+// There is no sign-in. Anyone who has the app's URL can read and write these two
+// collections. For a two-person dinner app on an unadvertised URL that is a
+// reasonable place to land: adding auth would mean both of you logging in to
+// decide what's for dinner, which is worse than the risk it removes.
+//
+// What these rules DO buy you is shape and size validation. Nobody can turn this
+// database into free storage, and — the part that actually matters — nobody can
+// create a dish whose seafood warning has no reason and no counter phrase
+// attached. That invariant is enforced here as well as in the form, because a
+// warning that says "be careful" without saying what to ask is worse than no
+// warning at all.
+//
+// If you ever want to close it properly, the smallest useful step is Firebase
+// Anonymous Auth plus `request.auth != null`, then pinning to your two UIDs.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isString(v, maxLen) {
+      return v is string && v.size() > 0 && v.size() <= maxLen;
+    }
+
+    function isOptionalString(v, maxLen) {
+      return v == null || (v is string && v.size() <= maxLen);
+    }
+
+    // --- the shared meal log -------------------------------------------------
+    // Both phones write here; this is what stops dinner repeating.
+    match /meals/{mealId} {
+      allow read: if true;
+
+      allow create: if request.resource.data.keys().hasOnly(['dishName', 'zoneId', 'eatenAt'])
+        && isString(request.resource.data.dishName, 120)
+        && isString(request.resource.data.zoneId, 40)
+        && request.resource.data.eatenAt is number;
+
+      // Logging the same dish again replaces the old row rather than stacking
+      // duplicates, so the client needs to be able to delete. Nothing is edited
+      // in place.
+      allow delete: if true;
+      allow update: if false;
+    }
+
+    // --- dishes you two add yourselves --------------------------------------
+    // The 166 built-in dishes are NOT here. They live in data/dishes.json, in
+    // git, where they survive this database being deleted.
+    match /customDishes/{dishId} {
+      allow read: if true;
+
+      allow create: if request.resource.data.keys().hasOnly([
+            'name', 'cuisine', 'blurb', 'seafood', 'seafoodNote', 'askFor',
+            'condiment', 'condimentNote', 'takeaway', 'priceBand',
+            'venues', 'tags', 'custom', 'createdAt'
+          ])
+        && isString(request.resource.data.name, 80)
+        && isString(request.resource.data.cuisine, 40)
+        && isString(request.resource.data.blurb, 240)
+        && request.resource.data.seafood in ['clear', 'hidden_risk', 'avoid']
+        && request.resource.data.condiment in ['clean', 'side_or_cooked', 'spread_on']
+        && request.resource.data.takeaway in ['eat_in_only', 'travels_ok', 'travels_well']
+        && request.resource.data.priceBand in [1, 2, 3]
+        && request.resource.data.venues is list
+        && request.resource.data.venues.size() >= 1
+        && request.resource.data.venues.size() <= 6
+        && request.resource.data.tags is list
+        && request.resource.data.createdAt is number
+        && isOptionalString(request.resource.data.seafoodNote, 400)
+        && isOptionalString(request.resource.data.condimentNote, 400)
+        && isOptionalString(request.resource.data.askFor, 400)
+
+        // The invariant worth protecting: a seafood warning must carry a reason,
+        // and a hidden-risk dish must carry the words to say at the counter.
+        && (request.resource.data.seafood == 'clear'
+            || isString(request.resource.data.seafoodNote, 400))
+        && (request.resource.data.seafood != 'hidden_risk'
+            || isString(request.resource.data.askFor, 400));
+
+      allow update, delete: if true;
+    }
+
+    // Everything else is closed.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

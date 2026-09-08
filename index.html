@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ulam Roulette</title>
+<meta name="description" content="A dinner randomiser for Singapore that screens every dish for hidden seafood and tells you what to say at the stall.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#141009">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ulam">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap">
+<style>
+/* ---------------------------------------------------------------------------
+   Dark-first, warm-neutral. Grounded in the plateware research: dark,
+   high-contrast surfaces read as "modern, appetising, aesthetic"; red surfaces
+   read as "artificial, unsightly, unappetising". The result card is the plate.
+   Chroma is reserved for meaning — never decoration.
+--------------------------------------------------------------------------- */
+:root{
+  --paper:#141009; --card:#1F1913; --card-2:#2B241C;
+  --ink:#F6EEE1; --ink-2:#BFB2A1; --ink-3:#A2947F;
+  --line:#342B22; --line-strong:#4A3E31;
+  --ember:#EE8A4A; --ember-soft:#3A2314;
+  --jade:#6FC793; --jade-soft:#14301F;
+  --amber:#E8BB5C; --amber-soft:#372B12;
+  --crimson:#F0836A; --crimson-soft:#3D1F17;
+  --shadow:0 1px 2px rgba(0,0,0,.5), 0 14px 34px -14px rgba(0,0,0,.85);
+}
+:root[data-theme="light"]{
+  --paper:#EFE7DA; --card:#FDFAF5; --card-2:#E7DCCB;
+  --ink:#1B1509; --ink-2:#4F4438; --ink-3:#5F5344;
+  --line:#DCCFBB; --line-strong:#BCAB94;
+  --ember:#A8480F; --ember-soft:#F7E5D5;
+  --jade:#15613C; --jade-soft:#DCEBE0;
+  --amber:#7A5504; --amber-soft:#F6E9CB;
+  --crimson:#96301A; --crimson-soft:#F7DDD6;
+  --shadow:0 1px 2px rgba(27,21,9,.07), 0 12px 30px -14px rgba(27,21,9,.3);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px; line-height:1.5; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:520px; margin:0 auto; padding:0 16px 120px; display:flex; flex-direction:column; gap:18px}
+
+/* masthead */
+.mast{padding:22px 0 4px; display:flex; align-items:flex-start; justify-content:space-between; gap:14px}
+.mast h1{font-family:Anton,"Public Sans",sans-serif; font-weight:400; font-size:clamp(30px,9vw,40px);
+  line-height:.92; letter-spacing:.005em; margin:0; text-transform:uppercase}
+.mast h1 em{font-style:normal; color:var(--ember)}
+.mast p{margin:7px 0 0; font-size:13px; color:var(--ink-2); max-width:34ch}
+.iconbtn{flex:none; border:1px solid var(--line-strong); background:var(--card); color:var(--ink-2);
+  width:36px; height:36px; border-radius:50%; cursor:pointer; display:grid; place-items:center; margin-top:4px}
+.iconbtn:hover{color:var(--ink); border-color:var(--ink-3)}
+
+/* controls */
+.panel{background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:13px 14px; display:flex; flex-direction:column; gap:12px}
+.lbl{font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--ink-3); display:block; margin-bottom:7px}
+.count{float:right; font-family:"Space Mono",monospace; font-size:11px; letter-spacing:0;
+  text-transform:none; font-weight:400; color:var(--ember)}
+.row{display:flex; gap:8px; align-items:center}
+select,.btn-ghost{font-family:inherit; font-size:14px; color:var(--ink); background:var(--card-2);
+  border:1px solid var(--line-strong); border-radius:7px; padding:9px 11px; cursor:pointer}
+select{flex:1; min-width:0; appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);
+  background-position:calc(100% - 17px) 51%, calc(100% - 12px) 51%;
+  background-size:5px 5px,5px 5px; background-repeat:no-repeat; padding-right:32px}
+.btn-ghost{white-space:nowrap; font-size:13px; padding:9px 12px}
+.btn-ghost:hover{border-color:var(--ink-3)}
+.seg{display:flex; border:1px solid var(--line-strong); border-radius:7px; overflow:hidden; width:100%}
+.seg button{flex:1; min-width:0; font-family:inherit; font-size:12.5px; font-weight:600; padding:9px 4px;
+  background:var(--card-2); color:var(--ink-2); border:0; cursor:pointer;
+  border-right:1px solid var(--line-strong); line-height:1.25}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ember); color:var(--paper)}
+.seg button:hover:not([aria-pressed="true"]){color:var(--ink)}
+.seg small{display:block; font-weight:400; font-size:11px; opacity:.95}
+
+/* the chit */
+.chit{position:relative; background:var(--card); box-shadow:var(--shadow); border-radius:3px}
+.chit::before,.chit::after{content:""; position:absolute; left:0; right:0; height:8px;
+  background:radial-gradient(circle at 5px 0, transparent 5px, var(--card) 5.5px);
+  background-size:10px 8px; background-repeat:repeat-x}
+.chit::before{top:-7px; transform:scaleY(-1)}
+.chit::after{bottom:-7px}
+.chit-head{font-family:"Space Mono",ui-monospace,monospace; font-size:11px; color:var(--ink-3);
+  padding:11px 16px; border-bottom:1px dashed var(--line-strong);
+  display:flex; justify-content:space-between; gap:10px; text-transform:uppercase; letter-spacing:.04em}
+.chit-body{padding:18px 16px 16px}
+.eyebrow{font-size:11px; font-weight:700; letter-spacing:.11em; text-transform:uppercase;
+  color:var(--ember); margin:0 0 8px}
+.dish{font-family:Anton,"Public Sans",sans-serif; font-weight:400; text-transform:uppercase;
+  font-size:clamp(30px,8.6vw,42px); line-height:.94; letter-spacing:.008em; margin:0; text-wrap:balance}
+.dish-sub{margin:9px 0 0; color:var(--ink-2); font-size:14px; line-height:1.45}
+.meta{display:flex; gap:6px 14px; flex-wrap:wrap; margin-top:13px; padding-top:12px;
+  border-top:1px dashed var(--line-strong);
+  font-family:"Space Mono",ui-monospace,monospace; font-size:12.5px; color:var(--ink-2)}
+.meta b{color:var(--ink); font-weight:700}
+.verdicts{display:flex; flex-direction:column; gap:1px; margin-top:14px; background:var(--line);
+  border:1px solid var(--line); border-radius:8px; overflow:hidden}
+.v{display:flex; gap:11px; padding:11px 12px; background:var(--card); align-items:flex-start}
+.v-dot{flex:none; width:9px; height:9px; border-radius:50%; margin-top:5px}
+.v-who{font-size:11px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3); margin-bottom:2px}
+.v-txt{font-size:13.5px; line-height:1.45; margin:0}
+.v-ask{margin:7px 0 0; padding:8px 10px; border-radius:6px; font-size:13px; line-height:1.4;
+  font-family:"Space Mono",ui-monospace,monospace}
+.ok .v-dot{background:var(--jade)} .ok .v-txt{color:var(--ink-2)}
+.warn .v-dot{background:var(--amber)} .warn .v-txt{color:var(--ink)}
+.warn .v-ask{background:var(--amber-soft); color:var(--amber)}
+.stop .v-dot{background:var(--crimson)} .stop .v-txt{color:var(--ink)}
+
+/* where */
+.where{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:13px 14px; margin-top:22px}
+.venues{list-style:none; margin:9px 0 0; padding:0; display:flex; flex-direction:column; gap:1px;
+  background:var(--line); border:1px solid var(--line); border-radius:8px; overflow:hidden}
+.venues li{background:var(--card)}
+.venues a{display:flex; align-items:center; gap:10px; padding:11px 12px; text-decoration:none;
+  color:var(--ink); font-size:13.5px}
+.venues a:hover{background:var(--card-2)}
+.vline{flex:none; width:3px; align-self:stretch; border-radius:2px; margin:-11px 0; min-height:40px}
+.vname{flex:1; min-width:0}
+.vname span{display:block; font-size:12px; color:var(--ink-3); margin-top:1px}
+.varrow{flex:none; color:var(--ink-3); font-size:12.5px; font-family:"Space Mono",monospace}
+.venues a:hover .varrow{color:var(--ember)}
+.hint{font-size:12.5px; color:var(--ink-3); margin:10px 0 0; line-height:1.45}
+
+/* log */
+.log{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:13px 14px}
+.log-head{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:6px}
+.log-head .lbl{margin:0}
+.logrow{display:flex; justify-content:space-between; gap:10px; padding:7px 0;
+  border-bottom:1px dashed var(--line); font-size:13px}
+.logrow:last-child{border-bottom:0}
+.logrow time{font-family:"Space Mono",monospace; font-size:12px; color:var(--ink-3); flex:none}
+.empty{font-size:13px; color:var(--ink-3); font-style:italic; margin:6px 0 0}
+.sync{font-size:11px; font-family:"Space Mono",monospace; color:var(--ink-3);
+  text-transform:uppercase; letter-spacing:.06em}
+
+/* action bar */
+.bar{position:fixed; left:0; right:0; bottom:0; z-index:5;
+  background:color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter:blur(10px); border-top:1px solid var(--line);
+  padding:11px 16px calc(11px + env(safe-area-inset-bottom))}
+.bar-in{max-width:520px; margin:0 auto; display:flex; gap:8px}
+.spin{flex:1; font-family:Anton,sans-serif; font-size:17px; letter-spacing:.05em; text-transform:uppercase;
+  background:var(--ember); color:var(--paper); border:0; border-radius:8px; padding:15px 10px; cursor:pointer}
+.spin:hover:not(:disabled){filter:brightness(1.08)}
+.spin:disabled{opacity:.55; cursor:default}
+.ate{flex:none; font-family:inherit; font-size:12.5px; font-weight:600; color:var(--ink);
+  background:var(--card); border:1px solid var(--line-strong); border-radius:8px; padding:10px 13px;
+  cursor:pointer; line-height:1.2}
+.ate:hover:not(:disabled){border-color:var(--ember); color:var(--ember)}
+.ate.done{background:var(--jade-soft); color:var(--jade); border-color:var(--jade)}
+
+.notice{padding:22px 16px; text-align:center}
+.notice h2{font-family:Anton,sans-serif; font-weight:400; text-transform:uppercase; font-size:24px; margin:0 0 8px}
+.notice p{margin:0 auto; color:var(--ink-2); font-size:13.5px; max-width:40ch}
+
+/* add-a-dish dialog */
+dialog{border:1px solid var(--line-strong); border-radius:10px; background:var(--card); color:var(--ink);
+  padding:0; max-width:460px; width:calc(100% - 32px); max-height:86vh}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+.dlg-head{padding:16px 16px 0}
+.dlg-head h2{margin:0; font-family:Anton,sans-serif; font-weight:400; text-transform:uppercase; font-size:22px}
+.dlg-head p{margin:6px 0 0; font-size:13px; color:var(--ink-2)}
+form.add{padding:16px; display:flex; flex-direction:column; gap:13px; overflow-y:auto; max-height:70vh}
+.field{display:flex; flex-direction:column; gap:6px; min-width:0}
+.pair{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+input[type=text],textarea{font-family:inherit; font-size:14px; color:var(--ink); background:var(--card-2);
+  border:1px solid var(--line-strong); border-radius:7px; padding:9px 11px; width:100%}
+textarea{resize:vertical; min-height:56px}
+.chips{display:flex; flex-wrap:wrap; gap:6px}
+.chip{font-family:inherit; font-size:12.5px; padding:7px 11px; border-radius:999px; cursor:pointer;
+  background:var(--card-2); color:var(--ink-2); border:1px solid var(--line-strong)}
+.chip[aria-pressed="true"]{background:var(--ember); color:var(--paper); border-color:var(--ember)}
+.dlg-foot{display:flex; gap:8px; justify-content:flex-end; padding-top:4px}
+.err{margin:0; padding:10px 12px; border-radius:6px; background:var(--crimson-soft);
+  color:var(--crimson); font-size:13px}
+.primary{font-family:inherit; font-size:14px; font-weight:600; background:var(--ember); color:var(--paper);
+  border:0; border-radius:7px; padding:10px 16px; cursor:pointer}
+.primary:disabled{opacity:.6; cursor:default}
+
+:focus-visible{outline:2px solid var(--ember); outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+@media (max-width:420px){.pair{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="mast">
+    <div>
+      <h1>Ulam<br><em>Roulette</em></h1>
+      <p id="tagline">Dinner, decided. Screened for Mike&rsquo;s seafood allergy and her no-mayo-no-ketchup rule.</p>
+    </div>
+    <button class="iconbtn" id="theme" title="Switch theme" aria-label="Switch theme">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.6v10.8a5.4 5.4 0 0 1 0-10.8Z"/></svg>
+    </button>
+  </header>
+
+  <div class="panel">
+    <div>
+      <span class="lbl">Where are you now <span class="count" id="count"></span></span>
+      <div class="row">
+        <select id="zone" aria-label="Your area"></select>
+        <button class="btn-ghost" id="locate">Near me</button>
+      </div>
+    </div>
+    <div>
+      <span class="lbl">Who&rsquo;s eating</span>
+      <div class="seg" id="party" role="group" aria-label="Who is eating">
+        <button data-party="both" aria-pressed="true">Both of us<small>strictest filter</small></button>
+        <button data-party="mike" aria-pressed="false">Mike only<small>no seafood</small></button>
+        <button data-party="wife" aria-pressed="false">Wife only<small>no mayo or ketchup</small></button>
+      </div>
+    </div>
+    <div>
+      <span class="lbl">Budget tonight</span>
+      <div class="seg" id="price" role="group" aria-label="Price range">
+        <button data-price="any" aria-pressed="true">Any<small>surprise us</small></button>
+        <button data-price="1" aria-pressed="false">$<small>under 8</small></button>
+        <button data-price="2" aria-pressed="false">$$<small>8&ndash;16</small></button>
+        <button data-price="3" aria-pressed="false">$$$<small>16+</small></button>
+      </div>
+    </div>
+    <div>
+      <span class="lbl">How are you eating</span>
+      <div class="seg" id="mode" role="group" aria-label="Dine in or take away">
+        <button data-mode="in" aria-pressed="true">Sitting down<small>everything counts</small></button>
+        <button data-mode="out" aria-pressed="false">Taking away<small>only what survives</small></button>
+      </div>
+    </div>
+    <p class="hint">Her rule is applied automatically: anything spread with mayonnaise or ketchup is filtered
+      out. Cooked-in soy, vinegar, curry and chilli all stay.</p>
+  </div>
+
+  <main id="result" aria-live="polite"></main>
+
+  <section class="log">
+    <div class="log-head">
+      <span class="lbl">Last eaten</span>
+      <span class="sync" id="sync">local only</span>
+    </div>
+    <div id="loglist"></div>
+    <p class="hint">Anything logged in the last 10 days won&rsquo;t come up again.
+      Tap <b>Ate it</b> when you actually order it.</p>
+  </section>
+</div>
+
+<div class="bar">
+  <div class="bar-in">
+    <button class="spin" id="spin" disabled>Spin again</button>
+    <button class="ate" id="ate" disabled>Ate it</button>
+    <button class="ate" id="open-add" title="Add a dish" aria-label="Add a dish">+</button>
+  </div>
+</div>
+
+<dialog id="add-dlg">
+  <div class="dlg-head">
+    <h2>Add a dish</h2>
+    <p>It joins the roulette for both of you. Be honest about the seafood — that field is the whole point.</p>
+  </div>
+  <form class="add" id="add-form">
+    <div class="pair">
+      <label class="field"><span class="lbl">Dish name</span>
+        <input type="text" name="name" required maxlength="80" placeholder="Sliced Beef Hor Fun"></label>
+      <label class="field"><span class="lbl">Cuisine</span>
+        <input type="text" name="cuisine" required maxlength="40" placeholder="Zi Char"></label>
+    </div>
+    <label class="field"><span class="lbl">What it actually is</span>
+      <textarea name="blurb" required maxlength="240" placeholder="One line, the way a stall would describe it."></textarea></label>
+
+    <div class="field"><span class="lbl">Seafood</span>
+      <select name="seafood" id="f-seafood">
+        <option value="clear">Clear — none in it</option>
+        <option value="hidden_risk">Hidden risk — orderable if you ask</option>
+        <option value="avoid">Avoid — seafood is the dish</option>
+      </select></div>
+
+    <label class="field" id="wrap-sfnote" hidden><span class="lbl">What the risk is</span>
+      <input type="text" name="seafoodNote" maxlength="400" placeholder="The gravy is built on oyster sauce."></label>
+    <label class="field" id="wrap-ask" hidden><span class="lbl">What to say at the counter</span>
+      <input type="text" name="askFor" maxlength="400" placeholder="No oyster sauce — shellfish allergy."></label>
+
+    <div class="field"><span class="lbl">Condiments</span>
+      <select name="condiment">
+        <option value="clean">Nothing to leave off</option>
+        <option value="side_or_cooked" selected>On the side, or cooked in — fine for her</option>
+        <option value="spread_on">Mayo or ketchup spread on it — she skips this</option>
+      </select></div>
+    <label class="field"><span class="lbl">Condiment note (optional)</span>
+      <input type="text" name="condimentNote" maxlength="400" placeholder="Chilli comes in a saucer."></label>
+
+    <div class="pair">
+      <div class="field"><span class="lbl">Travels?</span>
+        <select name="takeaway">
+          <option value="eat_in_only">Eat in only</option>
+          <option value="travels_ok" selected>Dabao OK</option>
+          <option value="travels_well">Travels well</option>
+        </select></div>
+      <div class="field"><span class="lbl">Price</span>
+        <select name="priceBand">
+          <option value="1">$ — under 8</option>
+          <option value="2" selected>$$ — 8 to 16</option>
+          <option value="3">$$$ — 16 and up</option>
+        </select></div>
+    </div>
+
+    <div class="field"><span class="lbl">Where you find it</span>
+      <div class="chips" id="venue-chips"></div></div>
+
+    <p class="err" id="add-err" hidden></p>
+    <div class="dlg-foot">
+      <button type="button" class="btn-ghost" id="add-cancel">Cancel</button>
+      <button type="submit" class="primary" id="add-save">Add to the roulette</button>
+    </div>
+  </form>
+</dialog>
+
+<script type="module">
+/* ---------------------------------------------------------------------------
+   Data lives in two places, on purpose.
+
+   The 166-dish catalogue is a JSON file in this repo, under version control.
+   It is the asset here — the seafood tiering and the counter phrases are the
+   work — and git will outlive any vendor's free tier. It never goes in Firestore.
+
+   Firestore holds only what actually changes: the shared meal log and the
+   dishes you two add yourselves. If Firebase disappeared tomorrow you would
+   lose a meal log nobody will miss, not the research.
+
+   With no Firebase config present the app still runs: the log falls back to
+   this browser's own storage and the add-a-dish form is hidden.
+--------------------------------------------------------------------------- */
+
+const LINE = {NS:"#D42E12", EW:"#009645", NE:"#9900AA", CC:"#FA9E0D", DT:"#005EC4", TE:"#9D5B25"};
+const PRICE = {1:"under $8", 2:"$8–16", 3:"$16+"};
+const TAKEAWAY = {eat_in_only:"EAT IN ONLY", travels_ok:"DABAO OK", travels_well:"TRAVELS WELL"};
+const VENUE_KINDS = ["hawker","foodcourt","coffeeshop","restaurant","zichar","fastfood"];
+const VENUE_LABEL = {hawker:"Hawker", foodcourt:"Food court", coffeeshop:"Coffeeshop",
+                     restaurant:"Restaurant", zichar:"Zi char", fastfood:"Fast food"};
+const RECENT_DAYS = 10;
+
+const K = {zone:"ur_zone", party:"ur_party", mode:"ur_mode", price:"ur_price",
+           log:"ur_log", theme:"ur_theme"};
+const ls = {
+  get(k, f){ try{ const v = localStorage.getItem(k); return v === null ? f : JSON.parse(v); }catch(e){ return f; } },
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+};
+
+const el = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+let state = {
+  zone: ls.get(K.zone, "woodlands"),
+  party: ls.get(K.party, "both"),
+  mode: ls.get(K.mode, "in"),
+  price: ls.get(K.price, "any"),
+  log: ls.get(K.log, []),
+  current: null
+};
+let DISHES = [], ZONES = [], db = null, fs = null;
+
+/* ---------- theme: dark is the designed default ---------- */
+document.documentElement.setAttribute("data-theme", ls.get(K.theme, "dark"));
+el("theme").onclick = () => {
+  const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  ls.set(K.theme, next);
+};
+
+/* ---------- filtering: the whole product in one function ---------- */
+function recentNames(){
+  const cut = Date.now() - RECENT_DAYS * 864e5;
+  return new Set(state.log.filter(e => e.at > cut).map(e => e.n));
+}
+
+function eligible(){
+  const mike = state.party === "both" || state.party === "mike";
+  const wife = state.party === "both" || state.party === "wife";
+  const recent = recentNames();
+  return DISHES.filter(d => {
+    // Mike's allergy is the only hard exclusion. Hidden-risk dishes DO surface,
+    // carrying the words to say at the counter — that judgement is his to make
+    // at the stall, not the app's to make for him.
+    if (mike && d.seafood === "avoid") return false;
+    if (wife && d.condiment === "spread_on") return false;
+    if (state.mode === "out" && d.takeaway === "eat_in_only") return false;
+    if (state.price !== "any" && d.priceBand !== Number(state.price)) return false;
+    if (recent.has(d.name)) return false;
+    return true;
+  });
+}
+
+/* ---------- render ---------- */
+const mapsUrl = (dish, zone) =>
+  "https://www.google.com/maps/search/?api=1&query=" +
+  encodeURIComponent(dish + " " + zone.name + " Singapore");
+
+function verdictMike(d){
+  if (d.seafood === "clear") return {cls:"ok", txt:"No seafood in the standard build. Order it as it comes.", ask:null};
+  if (d.seafood === "hidden_risk") return {cls:"warn", txt:d.seafoodNote, ask:d.askFor};
+  return {cls:"stop", txt:d.seafoodNote, ask:null};
+}
+
+function render(){
+  const zone = ZONES.find(z => z.id === state.zone) || ZONES[0];
+  const d = state.current;
+  const box = el("result");
+  if (!zone) return;
+
+  if (!d){
+    box.innerHTML = '<div class="chit"><div class="notice"><h2>Nothing clears the filter</h2>'
+      + '<p>The budget band, the takeaway rule or the last-' + RECENT_DAYS + '-days list has squeezed it '
+      + 'to zero. Widening the budget to <b>Any</b> is usually the fastest fix.</p></div></div>';
+    return;
+  }
+
+  const m = verdictMike(d);
+  const showM = state.party !== "wife", showW = state.party !== "mike";
+  const stamp = new Date().toLocaleDateString("en-SG", {day:"2-digit", month:"short"}).toUpperCase();
+  const partyLabel = {both:"TABLE FOR 2", mike:"MIKE", wife:"WIFE"}[state.party];
+  const venueKind = d.venues.includes("hawker") ? "HAWKER"
+                  : d.venues.includes("restaurant") ? "SIT-DOWN" : "FOOD COURT";
+
+  let v = "";
+  if (showM) v += `<div class="v ${m.cls}"><span class="v-dot"></span><div>`
+    + `<div class="v-who">Mike &middot; seafood</div><p class="v-txt">${esc(m.txt)}</p>`
+    + (m.ask ? `<p class="v-ask">&ldquo;${esc(m.ask)}&rdquo;</p>` : "") + `</div></div>`;
+  if (showW){
+    const wCls = d.condiment === "spread_on" ? "warn" : "ok";
+    const wTxt = d.condimentNote || "Nothing she needs to leave off.";
+    v += `<div class="v ${wCls}"><span class="v-dot"></span><div>`
+       + `<div class="v-who">Wife &middot; condiments</div><p class="v-txt">${esc(wTxt)}</p></div></div>`;
+  }
+
+  const venues = zone.venues.map(x =>
+    `<li><a href="${mapsUrl(d.name, zone)}" target="_blank" rel="noopener">`
+    + `<span class="vline" style="background:${LINE[x.line] || "var(--line-strong)"}"></span>`
+    + `<span class="vname">${esc(x.name)}<span>${esc(x.detail)}</span></span>`
+    + `<span class="varrow">MAP &#8599;</span></a></li>`).join("");
+
+  box.innerHTML = `
+    <div class="chit">
+      <div class="chit-head"><span>${esc(zone.name)}</span><span>${partyLabel} &middot; ${stamp}</span></div>
+      <div class="chit-body">
+        <p class="eyebrow">${d.custom ? "Your own addition" : "Tonight you're having"}</p>
+        <h2 class="dish">${esc(d.name)}</h2>
+        <p class="dish-sub">${esc(d.blurb)}</p>
+        <div class="meta">
+          <span>${esc(d.cuisine)}</span><span><b>${PRICE[d.priceBand]}</b></span>
+          <span>${venueKind}</span><span>${TAKEAWAY[d.takeaway]}</span>
+        </div>
+        <div class="verdicts">${v}</div>
+      </div>
+    </div>
+    <section class="where">
+      <span class="lbl">Where to get it in ${esc(zone.name)}</span>
+      <ul class="venues">${venues}</ul>
+      <p class="hint">Each link opens a live Google Maps search for <b>${esc(d.name)}</b> around
+      ${esc(zone.name)}, so opening hours stay current. The venues are the reliable part —
+      individual stalls come and go.</p>
+    </section>`;
+}
+
+function renderLog(){
+  const box = el("loglist");
+  if (!state.log.length){ box.innerHTML = '<p class="empty">Nothing logged yet.</p>'; return; }
+  box.innerHTML = state.log.slice(0, 8).map(e => {
+    const days = Math.floor((Date.now() - e.at) / 864e5);
+    const when = days === 0 ? "today" : days === 1 ? "yesterday" : days + "d ago";
+    return `<div class="logrow"><span>${esc(e.n)}</span><time>${when}</time></div>`;
+  }).join("");
+}
+
+function updateCount(){
+  el("count").textContent = DISHES.length ? eligible().length + " dishes match" : "loading…";
+}
+
+/* ---------- actions ---------- */
+function spin(){
+  const pool = eligible();
+  updateCount();
+  if (!pool.length){ state.current = null; render(); return; }
+  let pick = pool[Math.floor(Math.random() * pool.length)];
+  if (pool.length > 1 && state.current && pick.name === state.current.name)
+    pick = pool[(pool.indexOf(pick) + 1) % pool.length];
+  state.current = pick;
+  el("ate").classList.remove("done");
+  el("ate").textContent = "Ate it";
+  el("ate").disabled = false;
+  render();
+}
+
+async function logMeal(){
+  if (!state.current) return;
+  const entry = {n: state.current.name, at: Date.now()};
+  state.log = [entry, ...state.log.filter(e => e.n !== entry.n)].slice(0, 40);
+  ls.set(K.log, state.log);
+  renderLog(); updateCount();
+  const b = el("ate");
+  b.classList.add("done"); b.textContent = "Logged";
+  if (db && fs){
+    try {
+      const existing = await fs.getDocs(fs.query(fs.collection(db, "meals"),
+        fs.where("dishName", "==", entry.n)));
+      await Promise.all(existing.docs.map(x => fs.deleteDoc(x.ref)));
+      await fs.addDoc(fs.collection(db, "meals"), {dishName: entry.n, zoneId: state.zone, eatenAt: entry.at});
+    } catch(e){ console.warn("meal log write failed", e); }
+  }
+}
+
+/* ---------- controls ---------- */
+function bindSeg(id, key){
+  el(id).querySelectorAll("button").forEach(btn => {
+    if (btn.dataset[key] === state[key])
+      el(id).querySelectorAll("button").forEach(b2 =>
+        b2.setAttribute("aria-pressed", String(b2 === btn)));
+    btn.onclick = () => {
+      el(id).querySelectorAll("button").forEach(b2 => b2.setAttribute("aria-pressed", "false"));
+      btn.setAttribute("aria-pressed", "true");
+      state[key] = btn.dataset[key];
+      ls.set(K[key], state[key]);
+      spin();
+    };
+  });
+}
+
+el("locate").onclick = () => {
+  const b = el("locate");
+  if (!navigator.geolocation){ b.textContent = "No GPS"; return; }
+  b.textContent = "Finding…"; b.disabled = true;
+  navigator.geolocation.getCurrentPosition(pos => {
+    const {latitude:la, longitude:lo} = pos.coords;
+    let best = ZONES[0], bd = Infinity;
+    for (const z of ZONES){
+      const dx = (z.lat - la) * 111, dy = (z.lng - lo) * 111 * Math.cos(la * Math.PI / 180);
+      const dist = dx*dx + dy*dy;
+      if (dist < bd){ bd = dist; best = z; }
+    }
+    state.zone = best.id; ls.set(K.zone, state.zone);
+    el("zone").value = best.id;
+    b.textContent = "Near me"; b.disabled = false;
+    spin();
+  }, () => {
+    b.textContent = "Blocked"; b.disabled = false;
+    setTimeout(() => b.textContent = "Near me", 2200);
+  }, {timeout: 8000, maximumAge: 300000});
+};
+
+el("spin").onclick = spin;
+el("ate").onclick = logMeal;
+
+/* ---------- add a dish ---------- */
+let pickedVenues = ["hawker"];
+el("venue-chips").innerHTML = VENUE_KINDS.map(k =>
+  `<button type="button" class="chip" data-v="${k}" aria-pressed="${k === "hawker"}">${VENUE_LABEL[k]}</button>`
+).join("");
+el("venue-chips").querySelectorAll(".chip").forEach(chip => {
+  chip.onclick = () => {
+    const v = chip.dataset.v;
+    const next = pickedVenues.includes(v) ? pickedVenues.filter(x => x !== v) : [...pickedVenues, v];
+    if (!next.length) return;              // at least one, always
+    pickedVenues = next;
+    chip.setAttribute("aria-pressed", String(pickedVenues.includes(v)));
+  };
+});
+
+el("f-seafood").onchange = e => {
+  const tier = e.target.value;
+  el("wrap-sfnote").hidden = tier === "clear";
+  el("wrap-ask").hidden = tier !== "hidden_risk";
+};
+
+el("open-add").onclick = () => { el("add-err").hidden = true; el("add-dlg").showModal(); };
+el("add-cancel").onclick = () => el("add-dlg").close();
+
+el("add-form").onsubmit = async (ev) => {
+  ev.preventDefault();
+  const f = new FormData(ev.target);
+  const get = k => (f.get(k) || "").toString().trim();
+  const dish = {
+    name: get("name"), cuisine: get("cuisine"), blurb: get("blurb"),
+    seafood: get("seafood"),
+    seafoodNote: get("seafoodNote") || null,
+    askFor: get("askFor") || null,
+    condiment: get("condiment"),
+    condimentNote: get("condimentNote") || null,
+    takeaway: get("takeaway"),
+    priceBand: Number(get("priceBand")),
+    venues: [...pickedVenues], tags: [], custom: true
+  };
+
+  // A warning with no reason attached is worse than no warning: it tells you to
+  // worry without telling you what to ask. Enforced here, and again in the rules.
+  const fail = (msg) => { el("add-err").textContent = msg; el("add-err").hidden = false; };
+  if (dish.seafood !== "clear" && !dish.seafoodNote) return fail("Say what the seafood risk actually is.");
+  if (dish.seafood === "hidden_risk" && !dish.askFor) return fail("Write the exact words to say at the counter.");
+  if (DISHES.some(d => d.name.toLowerCase() === dish.name.toLowerCase()))
+    return fail(`"${dish.name}" is already in the roulette.`);
+  if (!db || !fs) return fail("Firebase isn't configured, so custom dishes can't be saved yet.");
+
+  el("add-save").disabled = true;
+  try {
+    await fs.addDoc(fs.collection(db, "customDishes"), {...dish, createdAt: Date.now()});
+    ev.target.reset();
+    pickedVenues = ["hawker"];
+    el("venue-chips").querySelectorAll(".chip").forEach(c =>
+      c.setAttribute("aria-pressed", String(c.dataset.v === "hawker")));
+    el("wrap-sfnote").hidden = true; el("wrap-ask").hidden = true;
+    el("add-dlg").close();
+  } catch(e){
+    fail("Could not save that dish: " + e.message);
+  } finally {
+    el("add-save").disabled = false;
+  }
+};
+
+/* ---------- boot ---------- */
+async function boot(){
+  const [dishes, zones] = await Promise.all([
+    fetch("data/dishes.json").then(r => r.json()),
+    fetch("data/zones.json").then(r => r.json())
+  ]);
+  DISHES = dishes; ZONES = zones;
+
+  el("zone").innerHTML = ZONES.map(z =>
+    `<option value="${z.id}"${z.id === state.zone ? " selected" : ""}>${esc(z.name)}</option>`).join("");
+  el("zone").onchange = e => { state.zone = e.target.value; ls.set(K.zone, state.zone); spin(); };
+
+  bindSeg("party", "party"); bindSeg("price", "price"); bindSeg("mode", "mode");
+  el("spin").disabled = false;
+  spin(); renderLog();
+
+  await connectFirebase();
+}
+
+async function connectFirebase(){
+  let cfg = null;
+  try { cfg = (await import("./firebase-config.js")).firebaseConfig; }
+  catch(e){ /* no config yet — local-only mode, which is a valid state */ }
+  if (!cfg || !cfg.projectId || cfg.projectId.startsWith("YOUR_")){
+    el("open-add").hidden = true;
+    return;
+  }
+
+  try {
+    const appMod = await import("https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js");
+    fs = await import("https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js");
+    db = fs.getFirestore(appMod.initializeApp(cfg));
+    el("sync").textContent = "shared · live";
+
+    // Custom dishes merge into the catalogue as they arrive.
+    fs.onSnapshot(fs.collection(db, "customDishes"), snap => {
+      const custom = snap.docs.map(d => ({...d.data(), custom: true}));
+      const names = new Set(custom.map(c => c.name));
+      DISHES = [...DISHES.filter(d => !d.custom && !names.has(d.name)), ...custom];
+      updateCount();
+    }, err => console.warn("customDishes listener", err));
+
+    // The shared meal log — the thing that makes both phones agree.
+    fs.onSnapshot(fs.query(fs.collection(db, "meals"), fs.orderBy("eatenAt", "desc"), fs.limit(60)),
+      snap => {
+        const remote = snap.docs.map(d => ({n: d.data().dishName, at: d.data().eatenAt}));
+        const merged = [...remote, ...state.log]
+          .filter(e => e && typeof e.n === "string" && typeof e.at === "number")
+          .sort((a, b) => b.at - a.at);
+        const seen = new Set();
+        state.log = merged.filter(e => !seen.has(e.n) && seen.add(e.n)).slice(0, 40);
+        ls.set(K.log, state.log);
+        renderLog(); updateCount();
+      }, err => { el("sync").textContent = "local only"; console.warn("meals listener", err); });
+  } catch(e){
+    el("sync").textContent = "local only";
+    el("open-add").hidden = true;
+    console.warn("Firebase unavailable", e);
+  }
+}
+
+boot().catch(err => {
+  el("result").innerHTML = '<div class="chit"><div class="notice"><h2>Could not load the dish list</h2>'
+    + '<p>' + esc(err.message) + '. If you opened this file directly, serve the folder over http instead — '
+    + 'see the README.</p></div></div>';
+});
+</script>
+</body>
+</html>
