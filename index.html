@@ -451,7 +451,7 @@ function render(){
   // Grace's row only earns its place when there is actually something to ask for.
   if (d.condiment === "spread_on" && d.condimentNote)
     v += `<div class="v warn"><span class="v-dot"></span><div>`
-       + `<div class="v-who">Grace &middot; ask for it plain</div>`
+       + `<div class="v-who">Grace &middot; condiments</div>`
        + `<p class="v-txt">${esc(d.condimentNote)}</p></div></div>`;
 
   const venues = zone.venues.map(x =>
