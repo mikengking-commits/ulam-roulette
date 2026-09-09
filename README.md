@@ -1,10 +1,11 @@
 # Ulam Roulette
 
 A dinner randomiser for Singapore, built for two people with one seafood allergy
-between them. It picks a dish, tells you whether either of you can actually eat it,
-gives you the words to say at the stall, and points you at places nearby that serve it.
+between them. It picks a dish, tells you whether Mike can actually eat it, gives you
+the words to say at the stall, and points you at places nearby that serve it.
 
-166 dishes across 25 cuisines. No build step, no framework, no server.
+197 dishes across 26 cuisines — hawker, zi char, restaurant and the fast-food chains.
+No build step, no framework, no server.
 
 ---
 
@@ -23,7 +24,7 @@ So the app randomises the *dish* first, screens it, and only then asks where to 
 | `hidden_risk` | Belacan, oyster sauce, dashi, fish sauce, dried shrimp | Surfaces **with** the exact phrase to say at the counter |
 | `avoid` | Seafood is structural | Never surfaces when Mike is eating |
 
-55 of the 166 dishes are `hidden_risk`, and that is the point of the whole app.
+61 of the 197 dishes are `hidden_risk`, and that is the point of the whole app.
 The dangerous dishes are not the ones with "prawn" in the name — they are chicken rice
 greens finished with oyster sauce, nasi lemak sambal made with shrimp paste, gyudon
 simmered in bonito dashi, and free banchan kimchi fermented with jeotgal.
@@ -32,9 +33,23 @@ Hidden-risk dishes are deliberately **not** filtered out. That judgement belongs
 the person standing at the stall, not to the app. What the app owes them is the
 information and the words.
 
-**The condiment rule is narrow on purpose.** It screens for mayonnaise or ketchup
-*spread on* an item — burgers, sandwiches, omurice, tartar sauce. Cooked-in soy,
-vinegar, curry, gochujang and chilli all pass. Only 8 of 166 dishes are excluded.
+**Grace's condiments are noted, never filtered.** They used to be a hard exclusion:
+anything with mayonnaise or ketchup *spread on* it — burgers, sandwiches, omurice,
+tartar sauce — was dropped from the pool. She'd rather just ask at the counter, so
+those dishes are back in, and the card carries the words for the ask instead. It is
+the same move the app already made for Mike's hidden-risk dishes: the judgement
+belongs to the person at the stall; what the app owes them is the information and
+the words. The row only appears on the dishes where there is actually something to
+say — 8 of 197.
+
+**Fast food counts.** The chains are where a lot of Singapore actually eats on a
+Tuesday, so they are in the pool alongside hawker and zi char: McDonald's, KFC,
+Burger King, Popeyes, Texas Chicken, Jollibee, MOS Burger, Subway, A&W, Shake Shack,
+Five Guys, Wingstop, Nando's, 4Fingers, Old Chang Kee, Wok Hey and the pizza and
+kaya-toast chains. They get screened exactly like everything else, which is the point
+— Jollibee's palabok is built on prawn stock, Subway's Seafood Sensation is crab
+stick, and MOS does an ebi burger. Those now surface as `avoid` rather than as a
+surprise at the counter.
 
 **Venues are infrastructure, never stalls.** The 22 zones list hawker centres, malls
 and interchanges, because those don't close. Individual stalls do. Live opening hours
@@ -47,7 +62,7 @@ can go stale about what's open.
 
 | What | Where | Why |
 |---|---|---|
-| 166 dishes | `data/dishes.json` (git) | The asset. Static. Git outlives any vendor's free tier. |
+| 197 dishes | `data/dishes.json` (git) | The asset. Static. Git outlives any vendor's free tier. |
 | 22 zones | `data/zones.json` (git) | Static infrastructure. |
 | Portable dump | `data/dishes.sql` (git) | Redundancy. Rebuild on Postgres without parsing JS. |
 | Shared meal log | Firestore `meals` | Actually changes. Both phones must agree. |
@@ -133,14 +148,19 @@ prompt (Android). It opens fullscreen, portrait, with the receipt icon.
   "condimentNote": "Glaze is on the meat, cooked in.",
   "takeaway": "travels_well",                     // eat_in_only | travels_ok | travels_well
   "priceBand": 1,                                 // 1 = under $8, 2 = $8-16, 3 = $16+
-  "venues": ["hawker", "foodcourt"],
-  "tags": ["quick", "comfort"]
+  "venues": ["hawker", "foodcourt"],              // hawker | foodcourt | coffeeshop
+  "tags": ["quick", "comfort"]                    // restaurant | zichar | fastfood
 }
 ```
 
 **The one rule that matters:** if `seafood` is not `clear`, `seafoodNote` is required.
 If it is `hidden_risk`, `askFor` is required too, and it must be words you can say out
 loud at a counter. This is enforced in the form and again in `firestore.rules`.
+
+`condiment` no longer filters anything. It only decides whether the card shows Grace a
+line — `spread_on` means mayo or ketchup goes *on* the food rather than beside it, and
+`condimentNote` should then be the words for that ask ("Mayo is spread on the bun — ask
+for it dry"), not a description.
 
 ---
 

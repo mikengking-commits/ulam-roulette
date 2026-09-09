@@ -1,3247 +1,3854 @@
 [
- {
-  "name": "Hainanese Chicken Rice",
-  "cuisine": "Chinese",
-  "blurb": "Poached chicken, stock rice, ginger and chilli on the side.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Chilli, ginger and dark soy all come in saucers — just don't take them.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "foodcourt",
-   "coffeeshop"
-  ],
-  "tags": [
-   "comfort",
-   "light"
-  ]
- },
- {
-  "name": "Roasted Chicken Rice",
-  "cuisine": "Chinese",
-  "blurb": "Roast chicken over stock rice, crisper skin than the poached.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauces on the side.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "foodcourt"
-  ],
-  "tags": [
-   "comfort"
-  ]
- },
- {
-  "name": "Bak Kut Teh",
-  "cuisine": "Chinese",
-  "blurb": "Peppery pork rib soup with garlic, you tiao and rice.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Dark soy + chilli dip is optional and separate.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "coffeeshop",
-   "restaurant"
-  ],
-  "tags": [
-   "comfort",
-   "hearty",
-   "soup"
-  ]
- },
- {
-  "name": "Claypot Chicken Rice",
-  "cuisine": "Chinese",
-  "blurb": "Rice, chicken and lap cheong crisped in a clay pot.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Most versions finish with oyster sauce, and some add dried scallop.",
-  "askFor": "No oyster sauce — shellfish allergy. 不要蚝油，海鲜过敏。",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Dark soy glaze, cooked in. Fine for her.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "hawker",
-   "coffeeshop"
-  ],
-  "tags": [
-   "hearty",
-   "comfort"
-  ]
- },
- {
-  "name": "Salted Egg Chicken",
-  "cuisine": "Zi Char",
-  "blurb": "Fried chicken tossed in salted duck egg yolk and curry leaf.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Salted egg and curry leaf — none of her four.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "zichar",
-   "foodcourt"
-  ],
-  "tags": [
-   "rich",
-   "shareable"
-  ]
- },
- {
-  "name": "Kung Pao Chicken",
-  "cuisine": "Zi Char",
-  "blurb": "Diced chicken, dried chilli, peanuts, Sichuan pepper.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Soy in the wok, not on the plate. Fine.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "zichar",
-   "restaurant"
-  ],
-  "tags": [
-   "spicy",
-   "shareable"
-  ]
- },
- {
-  "name": "Sweet & Sour Pork",
-  "cuisine": "Zi Char",
-  "blurb": "Battered pork, pineapple, capsicum in a red sauce.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "The ketchup is cooked into a glaze, not squeezed on top.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "zichar",
-   "restaurant"
-  ],
-  "tags": [
-   "shareable"
-  ]
- },
- {
-  "name": "Mapo Tofu",
-  "cuisine": "Sichuan",
-  "blurb": "Silken tofu and minced pork in numbing bean paste.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Some kitchens add dried shrimp or XO to the base.",
-  "askFor": "No dried shrimp or XO sauce — shellfish allergy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Doubanjiang is fermented bean, not soy sauce. Should be fine for her.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "spicy",
-   "rice"
-  ]
- },
- {
-  "name": "Beef Hor Fun",
-  "cuisine": "Zi Char",
-  "blurb": "Flat rice noodles, beef, egg gravy, wok breath.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The gravy is almost always built on oyster sauce.",
-  "askFor": "No oyster sauce — shellfish allergy. This one is often refused; have a backup.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Gravy is cooked, nothing added at the table.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "zichar",
-   "hawker"
-  ],
-  "tags": [
-   "hearty"
-  ]
- },
- {
-  "name": "Wanton Mee",
-  "cuisine": "Chinese",
-  "blurb": "Springy egg noodles, char siu, dumplings, chilli sauce.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Many wanton fillings mix prawn into the pork.",
-  "askFor": "Pork-only wanton, no prawn — shellfish allergy. Some stalls can't split it.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Tossed in the kitchen. Ask for less chilli if she wants.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "coffeeshop"
-  ],
-  "tags": [
-   "quick",
-   "comfort"
-  ]
- },
- {
-  "name": "Bak Chor Mee",
-  "cuisine": "Teochew",
-  "blurb": "Minced pork noodles with vinegar, chilli and liver.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Classic versions use fried sole fish (ti poh) in the sauce and stock.",
-  "askFor": "No ti poh, no fish — allergy. Soup version is riskier than dry.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Vinegar and chilli go in at the stall — ask for less vinegar if she prefers.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "quick"
-  ]
- },
- {
-  "name": "Char Siew Rice",
-  "cuisine": "Cantonese",
-  "blurb": "Barbecued pork over rice with blanched greens.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The greens are usually dressed with oyster sauce.",
-  "askFor": "Plain greens, no oyster sauce — shellfish allergy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Glaze is on the meat, cooked in.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "foodcourt"
-  ],
-  "tags": [
-   "quick",
-   "comfort"
-  ]
- },
- {
-  "name": "Roast Duck Rice",
-  "cuisine": "Cantonese",
-  "blurb": "Roast or braised duck, rice, dark braising liquid.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Braise liquid, not a condiment.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "hawker",
-   "coffeeshop"
-  ],
-  "tags": [
-   "rich"
-  ]
- },
- {
-  "name": "Braised Duck Kway Chap",
-  "cuisine": "Teochew",
-  "blurb": "Braised duck, egg, tofu and broad rice sheets.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Everything is braised, nothing added after.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "hearty"
-  ]
- },
- {
-  "name": "Chicken Cutlet Rice",
-  "cuisine": "Chinese",
-  "blurb": "Breaded fried chicken over rice, no fuss.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauce comes on the side or can be left off.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "foodcourt",
-   "coffeeshop"
-  ],
-  "tags": [
-   "quick",
-   "kids"
-  ]
- },
- {
-  "name": "Sliced Fish Bee Hoon",
-  "cuisine": "Chinese",
-  "blurb": "Milky fish soup with rice vermicelli.",
-  "seafood": "avoid",
-  "seafoodNote": "It's a fish soup.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "hawker",
-   "foodcourt"
-  ],
-  "tags": [
-   "light"
-  ]
- },
- {
-  "name": "Hokkien Mee",
-  "cuisine": "Hokkien",
-  "blurb": "Noodles braised in prawn stock with squid and lard.",
-  "seafood": "avoid",
-  "seafoodNote": "Prawn stock base, prawns and squid throughout.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "rich"
-  ]
- },
- {
-  "name": "Char Kway Teow",
-  "cuisine": "Teochew",
-  "blurb": "Wok-fried flat noodles with cockles, lap cheong and lard.",
-  "seafood": "avoid",
-  "seafoodNote": "Cockles, and dried shrimp in the chilli paste.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "rich"
-  ]
- },
- {
-  "name": "Yong Tau Foo",
-  "cuisine": "Hakka",
-  "blurb": "Pick-your-own stuffed tofu and vegetables in soup.",
-  "seafood": "avoid",
-  "seafoodNote": "The stuffing is fish paste and the broth is anchovy-based.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "foodcourt"
-  ],
-  "tags": [
-   "light"
-  ]
- },
- {
-  "name": "Fishball Noodles",
-  "cuisine": "Teochew",
-  "blurb": "Noodles with fishballs and fishcake.",
-  "seafood": "avoid",
-  "seafoodNote": "Fish, throughout.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "light"
-  ]
- },
- {
-  "name": "Nasi Lemak",
-  "cuisine": "Malay",
-  "blurb": "Coconut rice, fried chicken, egg, cucumber, sambal.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Sambal is made with belacan (shrimp paste), and ikan bilis is anchovy.",
-  "askFor": "No sambal and no ikan bilis — shellfish and fish allergy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Without the sambal it's a clean plate — which suits her anyway.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "foodcourt",
-   "coffeeshop"
-  ],
-  "tags": [
-   "comfort",
-   "breakfast"
-  ]
- },
- {
-  "name": "Ayam Penyet",
-  "cuisine": "Indonesian",
-  "blurb": "Smashed fried chicken, rice, tofu, tempeh, sambal.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The sambal is belacan-based.",
-  "askFor": "No sambal — shrimp paste allergy. Chicken and sides are fine.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sambal arrives on the side of the plate.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "spicy",
-   "hearty"
-  ]
- },
- {
-  "name": "Ayam Goreng Berempah",
-  "cuisine": "Malay",
-  "blurb": "Spice-crusted fried chicken with rice.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Served with sambal; some spice rubs include belacan.",
-  "askFor": "No sambal, and check the marinade has no belacan.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sambal is separate.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "foodcourt"
-  ],
-  "tags": [
-   "comfort"
-  ]
- },
- {
-  "name": "Soto Ayam",
-  "cuisine": "Malay",
-  "blurb": "Turmeric chicken soup with rice cakes and bergedil.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sambal and lime on the side.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "foodcourt"
-  ],
-  "tags": [
-   "light",
-   "soup",
-   "comfort"
-  ]
- },
- {
-  "name": "Mee Rebus",
-  "cuisine": "Malay",
-  "blurb": "Yellow noodles in thick sweet potato gravy.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The gravy is usually built with dried shrimp or prawn stock.",
-  "askFor": "Ask what's in the gravy — most stalls use dried shrimp. Often not worth the risk.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sweet potato gravy — none of her four.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "comfort"
-  ]
- },
- {
-  "name": "Beef Rendang with Rice",
-  "cuisine": "Malay",
-  "blurb": "Slow-braised beef in dry coconut spice paste.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "A minority of rempah recipes include belacan.",
-  "askFor": "Any belacan in the rendang? Shrimp allergy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Coconut and rempah, no soy or vinegar.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "rich",
-   "hearty"
-  ]
- },
- {
-  "name": "Sup Kambing",
-  "cuisine": "Malay",
-  "blurb": "Peppery mutton soup with bread to dunk.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing added — a rare fully clean pick for her.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "hawker",
-   "coffeeshop"
-  ],
-  "tags": [
-   "soup",
-   "hearty",
-   "comfort"
-  ]
- },
- {
-  "name": "Nasi Padang",
-  "cuisine": "Indonesian",
-  "blurb": "Point at a spread — beef, chicken, egg, vegetables.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Several dishes on the counter use belacan or dried shrimp; the sambal always does.",
-  "askFor": "You choose plate by plate — skip the sambal and anything with visible shrimp paste.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "You control what goes on the plate.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "hawker",
-   "foodcourt"
-  ],
-  "tags": [
-   "hearty",
-   "choice"
-  ]
- },
- {
-  "name": "Mee Goreng",
-  "cuisine": "Indian-Muslim",
-  "blurb": "Fried yellow noodles, sweet, spicy, wet.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Usually contains prawn or squid, and the chilli paste uses belacan.",
-  "askFor": "Often unavoidable — most stalls won't cook a separate batch.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Cooked in the wok. Nothing squeezed on at the table.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "coffeeshop"
-  ],
-  "tags": [
-   "spicy"
-  ]
- },
- {
-  "name": "Nasi Goreng",
-  "cuisine": "Indonesian",
-  "blurb": "Fried rice with egg, chicken and sweet dark soy.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Terasi (shrimp paste) is standard in the seasoning; prawns are common.",
-  "askFor": "No terasi, no prawns — shrimp allergy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Kecap manis goes in during cooking.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "foodcourt",
-   "coffeeshop"
-  ],
-  "tags": [
-   "quick"
-  ]
- },
- {
-  "name": "Gado Gado",
-  "cuisine": "Indonesian",
-  "blurb": "Blanched vegetables, tofu, egg, peanut sauce.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Some peanut sauces are cut with shrimp paste.",
-  "askFor": "Any belacan in the peanut sauce?",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Peanut sauce — not one of her four.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "foodcourt"
-  ],
-  "tags": [
-   "light",
-   "veg"
-  ]
- },
- {
-  "name": "Chicken Satay",
-  "cuisine": "Malay",
-  "blurb": "Charcoal skewers with peanut sauce, ketupat, onion.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Peanut sauce, and it's a dip you control.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "hawker",
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "snack"
-  ]
- },
- {
-  "name": "Sup Tulang Merah",
-  "cuisine": "Indian-Muslim",
-  "blurb": "Mutton bones in a red sauce, eaten with bread.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Cooked tomato-chilli sauce — messy but not a table condiment.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "messy",
-   "late"
-  ]
- },
- {
-  "name": "Chicken Biryani",
-  "cuisine": "North Indian",
-  "blurb": "Spiced long-grain rice with chicken, raita on the side.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Raita, achar and gravy all come separately.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "hearty",
-   "comfort"
-  ]
- },
- {
-  "name": "Mutton Biryani",
-  "cuisine": "North Indian",
-  "blurb": "The same, with slow-cooked mutton.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sides are separate.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "hearty",
-   "rich"
-  ]
- },
- {
-  "name": "Butter Chicken with Naan",
-  "cuisine": "North Indian",
-  "blurb": "Tomato-cream chicken curry, naan to mop it.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Tomato and cream, no condiments involved.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "rich",
-   "comfort"
-  ]
- },
- {
-  "name": "Tandoori Chicken",
-  "cuisine": "North Indian",
-  "blurb": "Yoghurt-marinated chicken straight off the clay oven.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Mint chutney comes on the side. The chicken itself is dry-cooked.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "light",
-   "protein"
-  ]
- },
- {
-  "name": "Chicken 65",
-  "cuisine": "South Indian",
-  "blurb": "Crisp, chilli-fried boneless chicken.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Eaten as-is.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "spicy",
-   "snack"
-  ]
- },
- {
-  "name": "Roti Prata with Curry",
-  "cuisine": "Indian-Muslim",
-  "blurb": "Flaky griddled flatbread, curry to dip.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "The curry is a dip, not poured on — take dhal or chicken curry, not fish.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "coffeeshop",
-   "hawker"
-  ],
-  "tags": [
-   "cheap",
-   "late",
-   "breakfast"
-  ]
- },
- {
-  "name": "Murtabak",
-  "cuisine": "Indian-Muslim",
-  "blurb": "Prata stuffed with spiced minced mutton or chicken and egg.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Curry sauce on the side.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "coffeeshop",
-   "restaurant"
-  ],
-  "tags": [
-   "hearty",
-   "late"
-  ]
- },
- {
-  "name": "Thosai with Sambar",
-  "cuisine": "South Indian",
-  "blurb": "Fermented rice crepe with lentil stew and chutneys.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sambar and chutney are dips — the thosai is plain.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "restaurant",
-   "hawker"
-  ],
-  "tags": [
-   "light",
-   "veg",
-   "breakfast"
-  ]
- },
- {
-  "name": "Briyani Ayam Madu",
-  "cuisine": "Indian-Muslim",
-  "blurb": "Honey-glazed chicken over briyani rice.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Glaze is on the chicken; sides separate.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "comfort"
-  ]
- },
- {
-  "name": "Palak Paneer with Rice",
-  "cuisine": "North Indian",
-  "blurb": "Spinach curry with cubes of fresh cheese.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Spinach and cream base.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "veg",
-   "comfort"
-  ]
- },
- {
-  "name": "Mutton Curry with Chapati",
-  "cuisine": "South Indian",
-  "blurb": "Dark peppery mutton curry, thin wholemeal bread.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "A curry, not a condiment.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "hawker"
-  ],
-  "tags": [
-   "hearty",
-   "spicy"
-  ]
- },
- {
-  "name": "Roti John",
-  "cuisine": "Indian-Muslim",
-  "blurb": "Split baguette griddled with egg and minced meat.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "spread_on",
-  "condimentNote": "Comes slathered in mayo and chilli sauce — ask for it plain.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "coffeeshop"
-  ],
-  "tags": [
-   "late",
-   "cheap"
-  ]
- },
- {
-  "name": "Pad Krapow Gai",
-  "cuisine": "Thai",
-  "blurb": "Chilli-basil minced chicken over rice with a fried egg.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Built on fish sauce, and usually oyster sauce too.",
-  "askFor": "No fish sauce, no oyster sauce — this changes the dish and many kitchens will say no.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Wok sauce, nothing added on top.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "spicy",
-   "quick"
-  ]
- },
- {
-  "name": "Green Curry Chicken",
-  "cuisine": "Thai",
-  "blurb": "Coconut green curry with chicken and aubergine.",
-  "seafood": "avoid",
-  "seafoodNote": "Green curry paste contains shrimp paste, and fish sauce is added on top.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "spicy",
-   "rich"
-  ]
- },
- {
-  "name": "Pad Thai",
-  "cuisine": "Thai",
-  "blurb": "Sweet-sour fried rice noodles with peanuts.",
-  "seafood": "avoid",
-  "seafoodNote": "Dried shrimp in the noodles, fish sauce and tamarind in the sauce.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "sweet"
-  ]
- },
- {
-  "name": "Thai Grilled Chicken (Gai Yang)",
-  "cuisine": "Thai",
-  "blurb": "Charcoal-grilled marinated chicken with sticky rice.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The marinade is fish-sauce based.",
-  "askFor": "Fish sauce in the marinade? It nearly always is.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Dipping sauce comes separately; the chicken is grilled dry.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "protein"
-  ]
- },
- {
-  "name": "Mango Sticky Rice",
-  "cuisine": "Thai",
-  "blurb": "Coconut sticky rice with ripe mango. Yes, as dinner.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing to skip.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "sweet",
-   "light"
-  ]
- },
- {
-  "name": "Pho Bo",
-  "cuisine": "Vietnamese",
-  "blurb": "Beef broth, flat rice noodles, herbs, brisket.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The broth is seasoned with fish sauce at almost every shop.",
-  "askFor": "Fish sauce in the broth? Usually yes — worth asking before you sit.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Hoisin and sriracha come on the side; the broth itself is clean-tasting.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "soup",
-   "comfort",
-   "light"
-  ]
- },
- {
-  "name": "Banh Mi",
-  "cuisine": "Vietnamese",
-  "blurb": "Baguette with pork, pâté, pickles and coriander.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Fish sauce in the pickle liquid and the meat marinade.",
-  "askFor": "No fish sauce, no mayo.",
-  "condiment": "spread_on",
-  "condimentNote": "Mayo and pâté are spread on the bread. Ask for no mayo.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "quick",
-   "cheap"
-  ]
- },
- {
-  "name": "Com Tam (Broken Rice)",
-  "cuisine": "Vietnamese",
-  "blurb": "Grilled pork chop over broken rice with egg.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Nuoc cham dipping sauce is fish sauce, and the marinade often is too.",
-  "askFor": "Hold the nuoc cham; ask about the marinade.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "The dipping sauce is served separately.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "hearty"
-  ]
- },
- {
-  "name": "Korean Fried Chicken",
-  "cuisine": "Korean",
-  "blurb": "Double-fried chicken, soy-garlic or gochujang glaze.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Take the gochujang glaze, not the soy-garlic one.",
-  "takeaway": "eat_in_only",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "rich"
-  ]
- },
- {
-  "name": "Samgyeopsal",
-  "cuisine": "Korean",
-  "blurb": "Grill your own pork belly with lettuce and banchan.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Banchan often includes fermented seafood; some ssamjang has anchovy.",
-  "askFor": "Skip the seafood banchan and the ssamjang — the pork itself is clean.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Every sauce is on the table, not on the meat.",
-  "takeaway": "eat_in_only",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "occasion"
-  ]
- },
- {
-  "name": "Bibimbap",
-  "cuisine": "Korean",
-  "blurb": "Rice bowl with vegetables, beef and a fried egg.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Gochujang comes on the side and isn't on her list anyway.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "balanced",
-   "comfort"
-  ]
- },
- {
-  "name": "Budae Jjigae",
-  "cuisine": "Korean",
-  "blurb": "Army stew — spam, sausage, ramyeon, kimchi.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The broth base is usually anchovy stock, and fish cake is standard.",
-  "askFor": "Anchovy stock is near-universal here.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Gochujang broth — none of her four.",
-  "takeaway": "eat_in_only",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "hearty"
-  ]
- },
- {
-  "name": "Tteokbokki",
-  "cuisine": "Korean",
-  "blurb": "Chewy rice cakes in sweet chilli sauce.",
-  "seafood": "avoid",
-  "seafoodNote": "Anchovy-kelp broth plus fish cake.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "snack",
-   "spicy"
-  ]
- },
- {
-  "name": "Chicken Katsu Curry",
-  "cuisine": "Japanese",
-  "blurb": "Panko chicken cutlet, Japanese curry, rice.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Japanese curry roux, not a condiment. The katsu is breaded and dry.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "comfort",
-   "kids"
-  ]
- },
- {
-  "name": "Chicken Karaage Don",
-  "cuisine": "Japanese",
-  "blurb": "Fried chicken over rice.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Comes with Japanese mayo — ask for it without.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "quick",
-   "comfort"
-  ]
- },
- {
-  "name": "Yakitori Set",
-  "cuisine": "Japanese",
-  "blurb": "Charcoal chicken skewers, rice, pickles.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Some tare glazes are built on a dashi base.",
-  "askFor": "Order shio (salt) instead of tare — grilled plain, no dashi.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Shio version is completely dry.",
-  "takeaway": "travels_ok",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "light",
-   "shareable"
-  ]
- },
- {
-  "name": "Gyudon",
-  "cuisine": "Japanese",
-  "blurb": "Simmered beef and onion over rice.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The simmering liquid is dashi — bonito fish stock.",
-  "askFor": "Dashi is structural here. Not really removable.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Simmered in the sauce, not dressed.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "quick",
-   "cheap"
-  ]
- },
- {
-  "name": "Tonkotsu Ramen",
-  "cuisine": "Japanese",
-  "blurb": "Pork bone broth, chashu, ajitama, thin noodles.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Many shops blend niboshi (dried sardine) or dashi into the tare.",
-  "askFor": "Is there any fish in the broth or tare? Pure tonkotsu shops exist — ask first.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Pork broth, not a sauce.",
-  "takeaway": "eat_in_only",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "rich",
-   "comfort"
-  ]
- },
- {
-  "name": "Sushi / Chirashi",
-  "cuisine": "Japanese",
-  "blurb": "Raw fish over rice.",
-  "seafood": "avoid",
-  "seafoodNote": "Obviously.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "eat_in_only",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "light"
-  ]
- },
- {
-  "name": "Udon in Broth",
-  "cuisine": "Japanese",
-  "blurb": "Thick wheat noodles in a clear soup.",
-  "seafood": "avoid",
-  "seafoodNote": "The broth is dashi — bonito and kombu.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "light",
-   "soup"
-  ]
- },
- {
-  "name": "Pepper Lunch Beef Pepper Rice",
-  "cuisine": "Japanese",
-  "blurb": "Raw beef, rice, corn and butter on a 260°C iron plate — you cook it yourself. Chicken and Hamburg versions too.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Honey Brown and Garlic Soy come in bottles on the table — nothing is poured on unless you do it.",
-  "takeaway": "eat_in_only",
-  "priceBand": 2,
-  "venues": [
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "quick",
-   "comfort",
-   "favourite"
-  ]
- },
- {
-  "name": "Mala Xiang Guo",
-  "cuisine": "Sichuan",
-  "blurb": "Pick your own ingredients by weight, wok-tossed in numbing chilli oil. Choose your spice level.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "You control the basket, but the wok and oil are shared with everyone else's prawns and squid — and some shop-made mala bases include dried shrimp.",
-  "askFor": "Fresh wok and clean oil, no seafood — shellfish allergy. At a busy stall assume the oil is shared; the risk is real even with a clean basket.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Chilli and Sichuan pepper, none of her four. Skip the black vinegar if they offer it.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "hawker",
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "spicy",
-   "favourite",
-   "choice"
-  ]
- },
- {
-  "name": "Economic Rice (Cai Fan)",
-  "cuisine": "Chinese",
-  "blurb": "Point at two or three dishes over rice. The cheapest honest dinner in Singapore.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Seafood dishes share the counter, and most vegetable dishes are finished with oyster sauce.",
-  "askFor": "You choose the plate — skip anything seafood, and ask whether the veg has oyster sauce.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "You control exactly what lands on the plate.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "foodcourt",
-   "coffeeshop"
-  ],
-  "tags": [
-   "cheap",
-   "choice",
-   "quick"
-  ]
- },
- {
-  "name": "Herbal Chicken Soup",
-  "cuisine": "Chinese",
-  "blurb": "Chicken simmered with wolfberry, red date and angelica root.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing added.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "hawker",
-   "foodcourt",
-   "coffeeshop"
-  ],
-  "tags": [
-   "soup",
-   "comfort",
-   "light"
-  ]
- },
- {
-  "name": "ABC Soup with Rice",
-  "cuisine": "Chinese",
-  "blurb": "Pork rib, potato, carrot and tomato soup. Plain and good.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing added.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "coffeeshop"
-  ],
-  "tags": [
-   "soup",
-   "light",
-   "cheap"
-  ]
- },
- {
-  "name": "Lotus Root & Pork Rib Soup",
-  "cuisine": "Chinese",
-  "blurb": "Long-simmered soup, faintly sweet from the root.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Dried cuttlefish or dried scallop is a common depth ingredient.",
-  "askFor": "Any dried cuttlefish or scallop in the soup?",
-  "condiment": "clean",
-  "condimentNote": "Nothing added.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "hawker",
-   "coffeeshop"
-  ],
-  "tags": [
-   "soup",
-   "comfort"
-  ]
- },
- {
-  "name": "Marmite Chicken",
-  "cuisine": "Zi Char",
-  "blurb": "Fried chicken in a dark, sweet-savoury yeast glaze.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Glaze is cooked on.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "zichar",
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "rich"
-  ]
- },
- {
-  "name": "Coffee Pork Ribs",
-  "cuisine": "Zi Char",
-  "blurb": "Fried ribs in a sticky coffee caramel.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Cooked glaze, nothing added after.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "zichar",
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "rich"
-  ]
- },
- {
-  "name": "Black Pepper Beef",
-  "cuisine": "Zi Char",
-  "blurb": "Beef strips, onion and capsicum in coarse black pepper.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Oyster sauce is the usual base for the pepper gravy.",
-  "askFor": "No oyster sauce — shellfish allergy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Wok sauce.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "zichar",
-   "restaurant"
-  ],
-  "tags": [
-   "shareable"
-  ]
- },
- {
-  "name": "Hotplate Tofu",
-  "cuisine": "Zi Char",
-  "blurb": "Egg tofu with minced pork and gravy on a sizzling plate.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Prawns are usually in it, and the gravy is oyster-sauce based.",
-  "askFor": "No prawns, no oyster sauce — many kitchens will refuse.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Gravy is cooked.",
-  "takeaway": "eat_in_only",
-  "priceBand": 2,
-  "venues": [
-   "zichar"
-  ],
-  "tags": [
-   "shareable"
-  ]
- },
- {
-  "name": "French Bean with Minced Pork",
-  "cuisine": "Zi Char",
-  "blurb": "Blistered beans wok-tossed with pork and garlic.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Dried shrimp (hae bee) is the classic addition.",
-  "askFor": "No dried shrimp — shellfish allergy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Wok-tossed, nothing added.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "zichar"
-  ],
-  "tags": [
-   "veg",
-   "shareable"
-  ]
- },
- {
-  "name": "Sambal Kangkong",
-  "cuisine": "Zi Char",
-  "blurb": "Water spinach in chilli paste.",
-  "seafood": "avoid",
-  "seafoodNote": "The sambal is belacan — shrimp paste is what makes it sambal.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "zichar"
-  ],
-  "tags": [
-   "veg",
-   "spicy"
-  ]
- },
- {
-  "name": "Har Cheong Gai",
-  "cuisine": "Zi Char",
-  "blurb": "Chicken wings fried in fermented prawn paste batter.",
-  "seafood": "avoid",
-  "seafoodNote": "Prawn paste is the batter.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "zichar"
-  ],
-  "tags": [
-   "shareable"
-  ]
- },
- {
-  "name": "Xiao Long Bao",
-  "cuisine": "Shanghainese",
-  "blurb": "Soup dumplings, pork and hot broth in a thin skin.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Vinegar and ginger come in a dish — she just won't take it.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "shareable",
-   "light"
-  ]
- },
- {
-  "name": "Char Siew Bao",
-  "cuisine": "Cantonese",
-  "blurb": "Steamed buns filled with sweet barbecued pork.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing on the side.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "restaurant",
-   "foodcourt",
-   "hawker"
-  ],
-  "tags": [
-   "snack",
-   "cheap"
-  ]
- },
- {
-  "name": "Siew Mai & Har Gow",
-  "cuisine": "Cantonese",
-  "blurb": "The two dim sum everyone orders first.",
-  "seafood": "avoid",
-  "seafoodNote": "Har gow is prawn, and siew mai is topped with prawn or roe.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable"
-  ]
- },
- {
-  "name": "Chee Cheong Fun",
-  "cuisine": "Cantonese",
-  "blurb": "Silky steamed rice rolls in sweet and sesame sauce.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Many stalls fold dried shrimp into the rolls or the sauce.",
-  "askFor": "No dried shrimp — shellfish allergy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauce is poured in the kitchen.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "foodcourt"
-  ],
-  "tags": [
-   "cheap",
-   "breakfast",
-   "light"
-  ]
- },
- {
-  "name": "Fried Carrot Cake",
-  "cuisine": "Teochew",
-  "blurb": "Cubes of radish cake fried with egg and preserved radish.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Dried shrimp is standard in the white version at most stalls.",
-  "askFor": "No dried shrimp — shellfish allergy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Cooked in the wok.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "cheap",
-   "breakfast"
-  ]
- },
- {
-  "name": "Oyster Omelette",
-  "cuisine": "Teochew",
-  "blurb": "Egg, starch and oysters, crisp at the edges.",
-  "seafood": "avoid",
-  "seafoodNote": "Oysters.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "rich"
-  ]
- },
- {
-  "name": "Popiah",
-  "cuisine": "Hokkien",
-  "blurb": "Soft rolls of stewed turnip, egg and peanut.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Dried shrimp is in the turnip filling almost everywhere.",
-  "askFor": "No dried shrimp in the filling — shellfish allergy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sweet sauce is spread inside — ask for light.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "light",
-   "snack"
-  ]
- },
- {
-  "name": "Yang Chow Fried Rice",
-  "cuisine": "Cantonese",
-  "blurb": "Egg fried rice with char siew and prawns.",
-  "seafood": "avoid",
-  "seafoodNote": "Prawns are a defining ingredient.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "zichar",
-   "restaurant"
-  ],
-  "tags": [
-   "shareable"
-  ]
- },
- {
-  "name": "Olive Fried Rice",
-  "cuisine": "Cantonese",
-  "blurb": "Fried rice with preserved olive leaf, minced pork and long bean.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Cooked in the wok.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "zichar",
-   "restaurant"
-  ],
-  "tags": [
-   "shareable"
-  ]
- },
- {
-  "name": "Beef La Mian",
-  "cuisine": "Chinese",
-  "blurb": "Hand-pulled noodles in clear beef broth with radish.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Chilli oil on the side.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "soup",
-   "comfort"
-  ]
- },
- {
-  "name": "Hainanese Pork Chop",
-  "cuisine": "Hainanese",
-  "blurb": "Cracker-crumbed pork with peas and a tangy brown sauce.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauce is cooked and poured in the kitchen.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "hawker",
-   "restaurant"
-  ],
-  "tags": [
-   "comfort",
-   "retro"
-  ]
- },
- {
-  "name": "Braised Pork Belly Rice",
-  "cuisine": "Chinese",
-  "blurb": "Lu rou fan — soy-braised pork over rice with pickled greens.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Braised, not dressed.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "foodcourt",
-   "hawker"
-  ],
-  "tags": [
-   "cheap",
-   "comfort"
-  ]
- },
- {
-  "name": "Chicken Macaroni Soup",
-  "cuisine": "Chinese",
-  "blurb": "Clear soup, macaroni, shredded chicken. Deliberately plain.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing added.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "coffeeshop"
-  ],
-  "tags": [
-   "light",
-   "comfort",
-   "sick-day"
-  ]
- },
- {
-  "name": "Steamboat",
-  "cuisine": "Chinese",
-  "blurb": "Cook it yourself at the table in a shared pot.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The pot is shared and seafood goes in it. For an allergy, a shared broth is the risk, not the basket.",
-  "askFor": "Split pot, and nothing seafood on your side — still not zero risk.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Dipping sauces are self-serve.",
-  "takeaway": "eat_in_only",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "occasion"
-  ]
- },
- {
-  "name": "Curry Chicken Noodles",
-  "cuisine": "Chinese",
-  "blurb": "Coconut curry broth, yellow noodles, chicken and puffs.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Some curry bases are built with dried shrimp, and cockles get added at a few stalls.",
-  "askFor": "No cockles, and check the curry base for dried shrimp.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Broth, not a condiment.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "coffeeshop"
-  ],
-  "tags": [
-   "spicy",
-   "comfort"
-  ]
- },
- {
-  "name": "Bulgogi with Rice",
-  "cuisine": "Korean",
-  "blurb": "Sweet marinated beef, grilled and served over rice.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Marinade is cooked in.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "comfort",
-   "quick"
-  ]
- },
- {
-  "name": "Kimchi Jjigae",
-  "cuisine": "Korean",
-  "blurb": "Sour kimchi stew with pork belly and tofu.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Kimchi is nearly always fermented with jeotgal — shrimp or anchovy — and the stock is often anchovy.",
-  "askFor": "This one is hard to make safe. Vegan kimchi exists but is rare in restaurants.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Stew.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "spicy",
-   "comfort",
-   "soup"
-  ]
- },
- {
-  "name": "Doenjang Jjigae",
-  "cuisine": "Korean",
-  "blurb": "Soybean paste stew with tofu, courgette and pork.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The stock is usually anchovy-and-kelp.",
-  "askFor": "Anchovy stock in the base? Most places, yes.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Stew.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "soup",
-   "comfort"
-  ]
- },
- {
-  "name": "Samgyetang",
-  "cuisine": "Korean",
-  "blurb": "Whole young chicken stuffed with rice and ginseng in clear broth.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Salt and pepper on the side, nothing else.",
-  "takeaway": "travels_ok",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "soup",
-   "occasion",
-   "light"
-  ]
- },
- {
-  "name": "Dakgalbi",
-  "cuisine": "Korean",
-  "blurb": "Chicken, cabbage and rice cake stir-fried in gochujang at the table.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Some marinades use anchovy stock or seafood extract for depth.",
-  "askFor": "Any seafood stock in the sauce?",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Gochujang, not on her list.",
-  "takeaway": "eat_in_only",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "spicy"
-  ]
- },
- {
-  "name": "Jjajangmyeon",
-  "cuisine": "Korean",
-  "blurb": "Thick noodles in black bean sauce with pork and onion.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Squid is a common addition and some sauces are seafood-stocked.",
-  "askFor": "Pork only, no squid — usually easy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauce is cooked and poured in the kitchen.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "comfort",
-   "cheap"
-  ]
- },
- {
-  "name": "Kimbap",
-  "cuisine": "Korean",
-  "blurb": "Seaweed rice rolls with egg, pickle, carrot and meat.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Crab stick and tuna are the two most common fillings.",
-  "askFor": "Beef or vegetable kimbap only — no crab stick, no tuna.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Nothing on the side.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "light",
-   "quick",
-   "picnic"
-  ]
- },
- {
-  "name": "Korean Corn Dog",
-  "cuisine": "Korean",
-  "blurb": "Battered sausage and cheese, rolled in sugar.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "spread_on",
-  "condimentNote": "It arrives striped with ketchup and mustard — ask for it bare.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "foodcourt",
-   "fastfood"
-  ],
-  "tags": [
-   "snack",
-   "street"
-  ]
- },
- {
-  "name": "Chicken Teriyaki Don",
-  "cuisine": "Japanese",
-  "blurb": "Glazed grilled chicken over rice.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Glaze is brushed on during grilling.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "quick",
-   "comfort"
-  ]
- },
- {
-  "name": "Japanese Curry Rice",
-  "cuisine": "Japanese",
-  "blurb": "Thick mild curry over rice, usually with a cutlet.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Curry roux, not a condiment.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "comfort",
-   "kids"
-  ]
- },
- {
-  "name": "Omurice",
-  "cuisine": "Japanese",
-  "blurb": "Omelette over fried rice.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "spread_on",
-  "condimentNote": "Ketchup is both in the rice and squeezed across the top — this one is genuinely out.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "comfort",
-   "kids"
-  ]
- },
- {
-  "name": "Oyakodon",
-  "cuisine": "Japanese",
-  "blurb": "Chicken and egg simmered together over rice.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The simmering liquid is dashi — bonito stock.",
-  "askFor": "Dashi is structural. Not removable.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Simmered.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "comfort",
-   "quick"
-  ]
- },
- {
-  "name": "Tonkatsu Set",
-  "cuisine": "Japanese",
-  "blurb": "Panko pork cutlet, shredded cabbage, rice and pickles.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Tonkatsu sauce is Worcestershire-based, which means anchovy.",
-  "askFor": "Cutlet with salt or ponzu instead of tonkatsu sauce — the pork itself is clean.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauce is poured by you, at the table.",
-  "takeaway": "travels_ok",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "comfort",
-   "protein"
-  ]
- },
- {
-  "name": "Chicken Nanban",
-  "cuisine": "Japanese",
-  "blurb": "Fried chicken in sweet vinegar with tartar sauce.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "spread_on",
-  "condimentNote": "Tartar is mayonnaise, and it's ladled over the chicken.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "rich"
-  ]
- },
- {
-  "name": "Wagyu Beef Don",
-  "cuisine": "Japanese",
-  "blurb": "Seared beef over rice with onsen egg.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "The tare is usually dashi-based.",
-  "askFor": "Any dashi in the sauce? Ask for salt-seasoned if they offer it.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauce is cooked in.",
-  "takeaway": "travels_ok",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "occasion",
-   "protein"
-  ]
- },
- {
-  "name": "Shabu Shabu",
-  "cuisine": "Japanese",
-  "blurb": "Swish thin slices through hot broth at your table.",
-  "seafood": "avoid",
-  "seafoodNote": "The kombu-dashi broth and the shared pot both carry seafood.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "eat_in_only",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "occasion"
-  ]
- },
- {
-  "name": "Soba",
-  "cuisine": "Japanese",
-  "blurb": "Buckwheat noodles, hot or cold, with dipping broth.",
-  "seafood": "avoid",
-  "seafoodNote": "Tsuyu is dashi — bonito and kombu.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "light"
-  ]
- },
- {
-  "name": "Okonomiyaki",
-  "cuisine": "Japanese",
-  "blurb": "Savoury cabbage pancake with sauce and bonito.",
-  "seafood": "avoid",
-  "seafoodNote": "Bonito flakes on top, dashi in the batter, squid in most versions.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable"
-  ]
- },
- {
-  "name": "Khao Man Gai",
-  "cuisine": "Thai",
-  "blurb": "Thai chicken rice with a fermented soybean and ginger sauce.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauce arrives in its own dish.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "comfort",
-   "light"
-  ]
- },
- {
-  "name": "Moo Ping with Sticky Rice",
-  "cuisine": "Thai",
-  "blurb": "Charcoal pork skewers, coconut-marinated, with sticky rice.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Fish sauce is in the marinade.",
-  "askFor": "Fish sauce in the marinade? Almost always yes.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Nothing added after grilling.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "street",
-   "snack"
-  ]
- },
- {
-  "name": "Larb Gai",
-  "cuisine": "Thai",
-  "blurb": "Minced chicken with lime, chilli, mint and toasted rice.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Fish sauce is the salt in this dish.",
-  "askFor": "Soy instead of fish sauce — some kitchens will, most won't.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Dressed in the kitchen.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "light",
-   "spicy"
-  ]
- },
- {
-  "name": "Tom Kha Gai",
-  "cuisine": "Thai",
-  "blurb": "Coconut galangal chicken soup, sour and creamy.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Fish sauce is standard seasoning.",
-  "askFor": "No fish sauce — fish allergy.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Soup.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "soup",
-   "comfort"
-  ]
- },
- {
-  "name": "Pandan Chicken",
-  "cuisine": "Thai",
-  "blurb": "Marinated chicken wrapped in pandan leaf and fried.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Oyster and fish sauce are both usual in the marinade.",
-  "askFor": "No oyster sauce, no fish sauce in the marinade.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Nothing on the side.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "snack",
-   "shareable"
-  ]
- },
- {
-  "name": "Bun Bo Hue",
-  "cuisine": "Vietnamese",
-  "blurb": "Spicy lemongrass beef noodle soup from central Vietnam.",
-  "seafood": "avoid",
-  "seafoodNote": "Shrimp paste is what gives the broth its character.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "spicy",
-   "soup"
-  ]
- },
- {
-  "name": "Bun Thit Nuong",
-  "cuisine": "Vietnamese",
-  "blurb": "Grilled pork over cold vermicelli with herbs and peanuts.",
-  "seafood": "avoid",
-  "seafoodNote": "Nuoc cham — fish sauce — is poured over the whole bowl.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "light",
-   "fresh"
-  ]
- },
- {
-  "name": "Chicken Tikka Masala",
-  "cuisine": "North Indian",
-  "blurb": "Grilled chicken in a spiced tomato cream sauce.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "A cooked curry, not a condiment.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "comfort",
-   "rich"
-  ]
- },
- {
-  "name": "Rogan Josh",
-  "cuisine": "North Indian",
-  "blurb": "Kashmiri lamb curry, deep red from chilli, not heat.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Curry.",
-  "takeaway": "travels_well",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "rich",
-   "occasion"
-  ]
- },
- {
-  "name": "Dal Makhani with Naan",
-  "cuisine": "North Indian",
-  "blurb": "Black lentils slow-cooked overnight with butter and cream.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Nothing on the side.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "veg",
-   "comfort",
-   "rich"
-  ]
- },
- {
-  "name": "Chana Masala",
-  "cuisine": "North Indian",
-  "blurb": "Chickpeas in a tangy onion-tomato masala.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Curry.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "restaurant",
-   "hawker"
-  ],
-  "tags": [
-   "veg",
-   "cheap"
-  ]
- },
- {
-  "name": "Paneer Tikka",
-  "cuisine": "North Indian",
-  "blurb": "Charred marinated cheese and peppers off the tandoor.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Mint chutney in a bowl on the side.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "veg",
-   "light"
-  ]
- },
- {
-  "name": "Mutton Keema with Naan",
-  "cuisine": "North Indian",
-  "blurb": "Spiced minced mutton with peas.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Cooked, nothing added.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "hearty"
-  ]
- },
- {
-  "name": "Chicken Chettinad",
-  "cuisine": "South Indian",
-  "blurb": "Peppery Tamil chicken curry, dark with roasted spice.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Curry.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "spicy",
-   "hearty"
-  ]
- },
- {
-  "name": "Kothu Parotta",
-  "cuisine": "South Indian",
-  "blurb": "Parotta shredded on the griddle with egg, meat and curry.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Cooked together on the griddle.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "restaurant",
-   "hawker"
-  ],
-  "tags": [
-   "cheap",
-   "late",
-   "messy"
-  ]
- },
- {
-  "name": "Idli with Sambar",
-  "cuisine": "South Indian",
-  "blurb": "Steamed rice cakes with lentil stew and chutney.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sambar and chutney are dips.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "restaurant",
-   "hawker"
-  ],
-  "tags": [
-   "light",
-   "veg",
-   "breakfast"
-  ]
- },
- {
-  "name": "Appam with Coconut Milk",
-  "cuisine": "South Indian",
-  "blurb": "Lacy fermented rice pancakes with sweet coconut milk.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing to leave off.",
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "restaurant",
-   "hawker"
-  ],
-  "tags": [
-   "light",
-   "veg",
-   "breakfast"
-  ]
- },
- {
-  "name": "Indian Rojak",
-  "cuisine": "Indian-Muslim",
-  "blurb": "Fried fritters dunked in a thick sweet chilli sauce.",
-  "seafood": "avoid",
-  "seafoodNote": "Prawn fritters and cuttlefish are on the tray, and the sauce is shrimp-thickened.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 1,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "snack",
-   "street"
-  ]
- },
- {
-  "name": "Mee Soto",
-  "cuisine": "Malay",
-  "blurb": "Yellow noodles in spiced chicken broth with shredded chicken.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sambal on the side.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "foodcourt"
-  ],
-  "tags": [
-   "soup",
-   "light",
-   "cheap"
-  ]
- },
- {
-  "name": "Lontong",
-  "cuisine": "Malay",
-  "blurb": "Compressed rice cakes in coconut vegetable stew.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Sayur lodeh is usually built with dried shrimp, and serunding is often anchovy.",
-  "askFor": "Dried shrimp in the lodeh? Nearly always.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Stew, poured in the kitchen.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker"
-  ],
-  "tags": [
-   "breakfast",
-   "comfort"
-  ]
- },
- {
-  "name": "Kurma Chicken with Rice",
-  "cuisine": "Malay",
-  "blurb": "Mild coconut and cashew curry, gently spiced.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Curry.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "comfort",
-   "mild"
-  ]
- },
- {
-  "name": "Ayam Masak Merah",
-  "cuisine": "Malay",
-  "blurb": "Fried chicken simmered in a sweet tomato chilli gravy.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Some cooks build the chilli base on belacan.",
-  "askFor": "Belacan in the gravy?",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Cooked gravy.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "comfort"
-  ]
- },
- {
-  "name": "Tahu Goreng",
-  "cuisine": "Indonesian",
-  "blurb": "Fried tofu with cucumber and thick peanut sauce.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Some peanut sauces are seasoned with shrimp paste.",
-  "askFor": "Belacan in the peanut sauce?",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauce is poured over.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "hawker",
-   "foodcourt"
-  ],
-  "tags": [
-   "veg",
-   "cheap",
-   "light"
-  ]
- },
- {
-  "name": "Bakso",
-  "cuisine": "Indonesian",
-  "blurb": "Beef meatball soup with noodles and fried wonton.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Chilli and sweet soy are self-serve at the table.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "foodcourt",
-   "restaurant"
-  ],
-  "tags": [
-   "soup",
-   "cheap",
-   "comfort"
-  ]
- },
- {
-  "name": "Nasi Ambeng",
-  "cuisine": "Javanese",
-  "blurb": "A shared tray of rice, chicken, beef, vegetables and serunding.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Serunding and sambal on the tray usually contain anchovy or dried shrimp.",
-  "askFor": "Skip the serunding and sambal — the rest of the tray is fine.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Everything is separate on the tray.",
-  "takeaway": "travels_well",
-  "priceBand": 3,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "shareable",
-   "occasion"
-  ]
- },
- {
-  "name": "Fish & Chips",
-  "cuisine": "Western",
-  "blurb": "Battered fish, fries, tartar.",
-  "seafood": "avoid",
-  "seafoodNote": "Fish.",
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": null,
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "comfort"
-  ]
- },
- {
-  "name": "Chicken Parmigiana",
-  "cuisine": "Italian",
-  "blurb": "Crumbed chicken under tomato and melted mozzarella.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Baked together, nothing added.",
-  "takeaway": "travels_ok",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "hearty",
-   "comfort"
-  ]
- },
- {
-  "name": "Mac & Cheese",
-  "cuisine": "Western",
-  "blurb": "Baked pasta in a thick cheese sauce.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing to leave off.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "comfort",
-   "kids"
-  ]
- },
- {
-  "name": "Grilled Lamb Chops",
-  "cuisine": "Western",
-  "blurb": "Chops with mint, potatoes and greens.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauce comes on the side.",
-  "takeaway": "travels_ok",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "occasion",
-   "protein"
-  ]
- },
- {
-  "name": "Caesar Salad",
-  "cuisine": "Western",
-  "blurb": "Cos lettuce, parmesan, croutons, thick dressing.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Caesar dressing is built on anchovy.",
-  "askFor": "There's anchovy in the dressing — ask, most kitchens won't make it without.",
-  "condiment": "spread_on",
-  "condimentNote": "The dressing is mayonnaise-based and tossed through.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "light",
-   "salad"
-  ]
- },
- {
-  "name": "Club Sandwich",
-  "cuisine": "Western",
-  "blurb": "Triple-decker with chicken, egg, bacon and lettuce.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "spread_on",
-  "condimentNote": "Mayo is spread on every layer — ask for it dry or skip.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "quick"
-  ]
- },
- {
-  "name": "Full English Breakfast",
-  "cuisine": "Western",
-  "blurb": "Eggs, sausage, bacon, beans, mushroom, toast. At dinner, why not.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Ketchup and brown sauce come in bottles on the table.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "hearty",
-   "breakfast"
-  ]
- },
- {
-  "name": "Buffalo Chicken Wings",
-  "cuisine": "Western",
-  "blurb": "Fried wings tossed in hot sauce.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "The blue cheese or ranch dip is a separate pot.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "snack"
-  ]
- },
- {
-  "name": "Shakshuka",
-  "cuisine": "Middle Eastern",
-  "blurb": "Eggs poached in spiced tomato and pepper, bread to dip.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing added.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "veg",
-   "comfort",
-   "breakfast"
-  ]
- },
- {
-  "name": "Lamb Kabsa",
-  "cuisine": "Middle Eastern",
-  "blurb": "Spiced rice baked with lamb, tomato and dried lime.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauces come in bowls.",
-  "takeaway": "travels_well",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "occasion",
-   "hearty"
-  ]
- },
- {
-  "name": "Manakish Za'atar",
-  "cuisine": "Middle Eastern",
-  "blurb": "Flatbread baked with thyme, sesame and olive oil.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing on it but herbs and oil.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "veg",
-   "cheap",
-   "snack"
-  ]
- },
- {
-  "name": "Chicken Gyro",
-  "cuisine": "Greek",
-  "blurb": "Shaved chicken, tomato, onion and tzatziki in pita.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Tzatziki is yoghurt and cucumber — not on her list, and it can be left out.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "quick",
-   "protein"
-  ]
- },
- {
-  "name": "Beef Burrito",
-  "cuisine": "Mexican",
-  "blurb": "Rice, beans, beef and salsa rolled in a flour tortilla.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Salsa and sour cream, not mayo or ketchup. You pick the fillings.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "quick",
-   "hearty",
-   "choice"
-  ]
- },
- {
-  "name": "Chicken Quesadilla",
-  "cuisine": "Mexican",
-  "blurb": "Griddled tortilla folded over chicken and melted cheese.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Dips on the side.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "quick",
-   "shareable"
-  ]
- },
- {
-  "name": "Loaded Nachos",
-  "cuisine": "Mexican",
-  "blurb": "Corn chips under cheese, beans, jalapeño and beef.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sour cream and guacamole in separate pots.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "snack"
-  ]
- },
- {
-  "name": "Babi Pongteh",
-  "cuisine": "Peranakan",
-  "blurb": "Pork braised with fermented soy bean and mushroom.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Slow-braised in taucheo.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "comfort",
-   "rich"
-  ]
- },
- {
-  "name": "Itek Tim",
-  "cuisine": "Peranakan",
-  "blurb": "Salted vegetable and duck soup, sour and savoury.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing added.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "soup",
-   "light"
-  ]
- },
- {
-  "name": "Ayam Buah Keluak",
-  "cuisine": "Peranakan",
-  "blurb": "Chicken with black nuts in a deep rempah gravy.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Most rempah recipes include belacan.",
-  "askFor": "Belacan in the rempah? Usually yes.",
-  "condiment": "side_or_cooked",
-  "condimentNote": "Rempah and black nut — none of her four.",
-  "takeaway": "travels_ok",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "occasion",
-   "rich"
-  ]
- },
- {
-  "name": "Chicken Chop",
-  "cuisine": "Western",
-  "blurb": "Grilled chicken thigh, fries, coleslaw, black pepper sauce.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauce on the side, coleslaw is mayo — swap it for salad.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "hawker",
-   "coffeeshop",
-   "foodcourt"
-  ],
-  "tags": [
-   "comfort",
-   "cheap"
-  ]
- },
- {
-  "name": "Ribeye Steak",
-  "cuisine": "Western",
-  "blurb": "Steak, fries, whatever green they give you.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauces come separately.",
-  "takeaway": "eat_in_only",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "occasion",
-   "protein"
-  ]
- },
- {
-  "name": "Roast Chicken & Sides",
-  "cuisine": "Western",
-  "blurb": "Half a roast chicken with potatoes and greens.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Gravy on the side.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "comfort",
-   "protein"
-  ]
- },
- {
-  "name": "Carbonara",
-  "cuisine": "Italian",
-  "blurb": "Egg, pecorino, guanciale, black pepper. No cream.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing to skip.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "rich",
-   "comfort"
-  ]
- },
- {
-  "name": "Bolognese",
-  "cuisine": "Italian",
-  "blurb": "Slow beef and tomato ragù over pasta.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Slow tomato ragù, closer to a braise than a sauce.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "comfort"
-  ]
- },
- {
-  "name": "Aglio Olio",
-  "cuisine": "Italian",
-  "blurb": "Garlic, chilli and olive oil pasta.",
-  "seafood": "hidden_risk",
-  "seafoodNote": "Many kitchens melt anchovy into the oil for depth.",
-  "askFor": "No anchovy in the oil — fish allergy.",
-  "condiment": "clean",
-  "condimentNote": "Just oil and garlic.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "light",
-   "quick"
-  ]
- },
- {
-  "name": "Margherita Pizza",
-  "cuisine": "Italian",
-  "blurb": "Tomato, mozzarella, basil.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "clean",
-  "condimentNote": "Nothing on the side.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "kids"
-  ]
- },
- {
-  "name": "Beef Burger",
-  "cuisine": "Western",
-  "blurb": "Patty, cheese, bun, fries.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "spread_on",
-  "condimentNote": "Ketchup and mayo are spread inside — order it dry, cheese only.",
-  "takeaway": "travels_ok",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "fastfood"
-  ],
-  "tags": [
-   "quick",
-   "comfort"
-  ]
- },
- {
-  "name": "Chicken Shawarma Plate",
-  "cuisine": "Middle Eastern",
-  "blurb": "Shaved chicken, rice or bread, salad, garlic toum.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Toum and chilli come on the side.",
-  "takeaway": "travels_well",
-  "priceBand": 2,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "quick",
-   "protein"
-  ]
- },
- {
-  "name": "Lamb Mandi",
-  "cuisine": "Middle Eastern",
-  "blurb": "Slow-smoked lamb over spiced long-grain rice.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Sauces come in bowls, not on the rice.",
-  "takeaway": "travels_well",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "occasion",
-   "hearty",
-   "shareable"
-  ]
- },
- {
-  "name": "Falafel Wrap",
-  "cuisine": "Middle Eastern",
-  "blurb": "Chickpea fritters, salad, tahini in flatbread.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Tahini is sesame. Ask for it light if she wants.",
-  "takeaway": "travels_well",
-  "priceBand": 1,
-  "venues": [
-   "restaurant",
-   "foodcourt"
-  ],
-  "tags": [
-   "veg",
-   "quick"
-  ]
- },
- {
-  "name": "Mixed Grill Platter",
-  "cuisine": "Middle Eastern",
-  "blurb": "Lamb, chicken and kofta skewers with rice and salad.",
-  "seafood": "clear",
-  "seafoodNote": null,
-  "askFor": null,
-  "condiment": "side_or_cooked",
-  "condimentNote": "Everything's grilled dry; sauces on the side.",
-  "takeaway": "eat_in_only",
-  "priceBand": 3,
-  "venues": [
-   "restaurant"
-  ],
-  "tags": [
-   "shareable",
-   "protein",
-   "occasion"
-  ]
- }
+  {
+    "name": "Hainanese Chicken Rice",
+    "cuisine": "Chinese",
+    "blurb": "Poached chicken, stock rice, ginger and chilli on the side.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Chilli, ginger and dark soy all come in saucers — just don't take them.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt",
+      "coffeeshop"
+    ],
+    "tags": [
+      "comfort",
+      "light"
+    ]
+  },
+  {
+    "name": "Roasted Chicken Rice",
+    "cuisine": "Chinese",
+    "blurb": "Roast chicken over stock rice, crisper skin than the poached.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauces on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt"
+    ],
+    "tags": [
+      "comfort"
+    ]
+  },
+  {
+    "name": "Bak Kut Teh",
+    "cuisine": "Chinese",
+    "blurb": "Peppery pork rib soup with garlic, you tiao and rice.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Dark soy + chilli dip is optional and separate.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "coffeeshop",
+      "restaurant"
+    ],
+    "tags": [
+      "comfort",
+      "hearty",
+      "soup"
+    ]
+  },
+  {
+    "name": "Claypot Chicken Rice",
+    "cuisine": "Chinese",
+    "blurb": "Rice, chicken and lap cheong crisped in a clay pot.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Most versions finish with oyster sauce, and some add dried scallop.",
+    "askFor": "No oyster sauce — shellfish allergy. 不要蚝油，海鲜过敏。",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Dark soy glaze, cooked in. Fine for her.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "hawker",
+      "coffeeshop"
+    ],
+    "tags": [
+      "hearty",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Salted Egg Chicken",
+    "cuisine": "Zi Char",
+    "blurb": "Fried chicken tossed in salted duck egg yolk and curry leaf.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Salted egg and curry leaf — none of her four.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "zichar",
+      "foodcourt"
+    ],
+    "tags": [
+      "rich",
+      "shareable"
+    ]
+  },
+  {
+    "name": "Kung Pao Chicken",
+    "cuisine": "Zi Char",
+    "blurb": "Diced chicken, dried chilli, peanuts, Sichuan pepper.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Soy in the wok, not on the plate. Fine.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "zichar",
+      "restaurant"
+    ],
+    "tags": [
+      "spicy",
+      "shareable"
+    ]
+  },
+  {
+    "name": "Sweet & Sour Pork",
+    "cuisine": "Zi Char",
+    "blurb": "Battered pork, pineapple, capsicum in a red sauce.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "The ketchup is cooked into a glaze, not squeezed on top.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "zichar",
+      "restaurant"
+    ],
+    "tags": [
+      "shareable"
+    ]
+  },
+  {
+    "name": "Mapo Tofu",
+    "cuisine": "Sichuan",
+    "blurb": "Silken tofu and minced pork in numbing bean paste.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Some kitchens add dried shrimp or XO to the base.",
+    "askFor": "No dried shrimp or XO sauce — shellfish allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Doubanjiang is fermented bean, not soy sauce. Should be fine for her.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "spicy",
+      "rice"
+    ]
+  },
+  {
+    "name": "Beef Hor Fun",
+    "cuisine": "Zi Char",
+    "blurb": "Flat rice noodles, beef, egg gravy, wok breath.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The gravy is almost always built on oyster sauce.",
+    "askFor": "No oyster sauce — shellfish allergy. This one is often refused; have a backup.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Gravy is cooked, nothing added at the table.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "zichar",
+      "hawker"
+    ],
+    "tags": [
+      "hearty"
+    ]
+  },
+  {
+    "name": "Wanton Mee",
+    "cuisine": "Chinese",
+    "blurb": "Springy egg noodles, char siu, dumplings, chilli sauce.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Many wanton fillings mix prawn into the pork.",
+    "askFor": "Pork-only wanton, no prawn — shellfish allergy. Some stalls can't split it.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Tossed in the kitchen. Ask for less chilli if she wants.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "coffeeshop"
+    ],
+    "tags": [
+      "quick",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Bak Chor Mee",
+    "cuisine": "Teochew",
+    "blurb": "Minced pork noodles with vinegar, chilli and liver.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Classic versions use fried sole fish (ti poh) in the sauce and stock.",
+    "askFor": "No ti poh, no fish — allergy. Soup version is riskier than dry.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Vinegar and chilli go in at the stall — ask for less vinegar if she prefers.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "quick"
+    ]
+  },
+  {
+    "name": "Char Siew Rice",
+    "cuisine": "Cantonese",
+    "blurb": "Barbecued pork over rice with blanched greens.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The greens are usually dressed with oyster sauce.",
+    "askFor": "Plain greens, no oyster sauce — shellfish allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Glaze is on the meat, cooked in.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt"
+    ],
+    "tags": [
+      "quick",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Roast Duck Rice",
+    "cuisine": "Cantonese",
+    "blurb": "Roast or braised duck, rice, dark braising liquid.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Braise liquid, not a condiment.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "hawker",
+      "coffeeshop"
+    ],
+    "tags": [
+      "rich"
+    ]
+  },
+  {
+    "name": "Braised Duck Kway Chap",
+    "cuisine": "Teochew",
+    "blurb": "Braised duck, egg, tofu and broad rice sheets.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Everything is braised, nothing added after.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "hearty"
+    ]
+  },
+  {
+    "name": "Chicken Cutlet Rice",
+    "cuisine": "Chinese",
+    "blurb": "Breaded fried chicken over rice, no fuss.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauce comes on the side or can be left off.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "foodcourt",
+      "coffeeshop"
+    ],
+    "tags": [
+      "quick",
+      "kids"
+    ]
+  },
+  {
+    "name": "Sliced Fish Bee Hoon",
+    "cuisine": "Chinese",
+    "blurb": "Milky fish soup with rice vermicelli.",
+    "seafood": "avoid",
+    "seafoodNote": "It's a fish soup.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "hawker",
+      "foodcourt"
+    ],
+    "tags": [
+      "light"
+    ]
+  },
+  {
+    "name": "Hokkien Mee",
+    "cuisine": "Hokkien",
+    "blurb": "Noodles braised in prawn stock with squid and lard.",
+    "seafood": "avoid",
+    "seafoodNote": "Prawn stock base, prawns and squid throughout.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "rich"
+    ]
+  },
+  {
+    "name": "Char Kway Teow",
+    "cuisine": "Teochew",
+    "blurb": "Wok-fried flat noodles with cockles, lap cheong and lard.",
+    "seafood": "avoid",
+    "seafoodNote": "Cockles, and dried shrimp in the chilli paste.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "rich"
+    ]
+  },
+  {
+    "name": "Yong Tau Foo",
+    "cuisine": "Hakka",
+    "blurb": "Pick-your-own stuffed tofu and vegetables in soup.",
+    "seafood": "avoid",
+    "seafoodNote": "The stuffing is fish paste and the broth is anchovy-based.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt"
+    ],
+    "tags": [
+      "light"
+    ]
+  },
+  {
+    "name": "Fishball Noodles",
+    "cuisine": "Teochew",
+    "blurb": "Noodles with fishballs and fishcake.",
+    "seafood": "avoid",
+    "seafoodNote": "Fish, throughout.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "light"
+    ]
+  },
+  {
+    "name": "Nasi Lemak",
+    "cuisine": "Malay",
+    "blurb": "Coconut rice, fried chicken, egg, cucumber, sambal.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Sambal is made with belacan (shrimp paste), and ikan bilis is anchovy.",
+    "askFor": "No sambal and no ikan bilis — shellfish and fish allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Without the sambal it's a clean plate — which suits her anyway.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt",
+      "coffeeshop"
+    ],
+    "tags": [
+      "comfort",
+      "breakfast"
+    ]
+  },
+  {
+    "name": "Ayam Penyet",
+    "cuisine": "Indonesian",
+    "blurb": "Smashed fried chicken, rice, tofu, tempeh, sambal.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The sambal is belacan-based.",
+    "askFor": "No sambal — shrimp paste allergy. Chicken and sides are fine.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sambal arrives on the side of the plate.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "foodcourt",
+      "restaurant"
+    ],
+    "tags": [
+      "spicy",
+      "hearty"
+    ]
+  },
+  {
+    "name": "Ayam Goreng Berempah",
+    "cuisine": "Malay",
+    "blurb": "Spice-crusted fried chicken with rice.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Served with sambal; some spice rubs include belacan.",
+    "askFor": "No sambal, and check the marinade has no belacan.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sambal is separate.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt"
+    ],
+    "tags": [
+      "comfort"
+    ]
+  },
+  {
+    "name": "Soto Ayam",
+    "cuisine": "Malay",
+    "blurb": "Turmeric chicken soup with rice cakes and bergedil.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sambal and lime on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt"
+    ],
+    "tags": [
+      "light",
+      "soup",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Mee Rebus",
+    "cuisine": "Malay",
+    "blurb": "Yellow noodles in thick sweet potato gravy.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The gravy is usually built with dried shrimp or prawn stock.",
+    "askFor": "Ask what's in the gravy — most stalls use dried shrimp. Often not worth the risk.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sweet potato gravy — none of her four.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "comfort"
+    ]
+  },
+  {
+    "name": "Beef Rendang with Rice",
+    "cuisine": "Malay",
+    "blurb": "Slow-braised beef in dry coconut spice paste.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "A minority of rempah recipes include belacan.",
+    "askFor": "Any belacan in the rendang? Shrimp allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Coconut and rempah, no soy or vinegar.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "foodcourt",
+      "restaurant"
+    ],
+    "tags": [
+      "rich",
+      "hearty"
+    ]
+  },
+  {
+    "name": "Sup Kambing",
+    "cuisine": "Malay",
+    "blurb": "Peppery mutton soup with bread to dunk.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing added — a rare fully clean pick for her.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "hawker",
+      "coffeeshop"
+    ],
+    "tags": [
+      "soup",
+      "hearty",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Nasi Padang",
+    "cuisine": "Indonesian",
+    "blurb": "Point at a spread — beef, chicken, egg, vegetables.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Several dishes on the counter use belacan or dried shrimp; the sambal always does.",
+    "askFor": "You choose plate by plate — skip the sambal and anything with visible shrimp paste.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "You control what goes on the plate.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "hawker",
+      "foodcourt"
+    ],
+    "tags": [
+      "hearty",
+      "choice"
+    ]
+  },
+  {
+    "name": "Mee Goreng",
+    "cuisine": "Indian-Muslim",
+    "blurb": "Fried yellow noodles, sweet, spicy, wet.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Usually contains prawn or squid, and the chilli paste uses belacan.",
+    "askFor": "Often unavoidable — most stalls won't cook a separate batch.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Cooked in the wok. Nothing squeezed on at the table.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "coffeeshop"
+    ],
+    "tags": [
+      "spicy"
+    ]
+  },
+  {
+    "name": "Nasi Goreng",
+    "cuisine": "Indonesian",
+    "blurb": "Fried rice with egg, chicken and sweet dark soy.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Terasi (shrimp paste) is standard in the seasoning; prawns are common.",
+    "askFor": "No terasi, no prawns — shrimp allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Kecap manis goes in during cooking.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "foodcourt",
+      "coffeeshop"
+    ],
+    "tags": [
+      "quick"
+    ]
+  },
+  {
+    "name": "Gado Gado",
+    "cuisine": "Indonesian",
+    "blurb": "Blanched vegetables, tofu, egg, peanut sauce.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Some peanut sauces are cut with shrimp paste.",
+    "askFor": "Any belacan in the peanut sauce?",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Peanut sauce — not one of her four.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "foodcourt"
+    ],
+    "tags": [
+      "light",
+      "veg"
+    ]
+  },
+  {
+    "name": "Chicken Satay",
+    "cuisine": "Malay",
+    "blurb": "Charcoal skewers with peanut sauce, ketupat, onion.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Peanut sauce, and it's a dip you control.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "hawker",
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "snack"
+    ]
+  },
+  {
+    "name": "Sup Tulang Merah",
+    "cuisine": "Indian-Muslim",
+    "blurb": "Mutton bones in a red sauce, eaten with bread.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Cooked tomato-chilli sauce — messy but not a table condiment.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "messy",
+      "late"
+    ]
+  },
+  {
+    "name": "Chicken Biryani",
+    "cuisine": "North Indian",
+    "blurb": "Spiced long-grain rice with chicken, raita on the side.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Raita, achar and gravy all come separately.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "hearty",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Mutton Biryani",
+    "cuisine": "North Indian",
+    "blurb": "The same, with slow-cooked mutton.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sides are separate.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "hearty",
+      "rich"
+    ]
+  },
+  {
+    "name": "Butter Chicken with Naan",
+    "cuisine": "North Indian",
+    "blurb": "Tomato-cream chicken curry, naan to mop it.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Tomato and cream, no condiments involved.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "rich",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Tandoori Chicken",
+    "cuisine": "North Indian",
+    "blurb": "Yoghurt-marinated chicken straight off the clay oven.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Mint chutney comes on the side. The chicken itself is dry-cooked.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "light",
+      "protein"
+    ]
+  },
+  {
+    "name": "Chicken 65",
+    "cuisine": "South Indian",
+    "blurb": "Crisp, chilli-fried boneless chicken.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Eaten as-is.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "spicy",
+      "snack"
+    ]
+  },
+  {
+    "name": "Roti Prata with Curry",
+    "cuisine": "Indian-Muslim",
+    "blurb": "Flaky griddled flatbread, curry to dip.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "The curry is a dip, not poured on — take dhal or chicken curry, not fish.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "coffeeshop",
+      "hawker"
+    ],
+    "tags": [
+      "cheap",
+      "late",
+      "breakfast"
+    ]
+  },
+  {
+    "name": "Murtabak",
+    "cuisine": "Indian-Muslim",
+    "blurb": "Prata stuffed with spiced minced mutton or chicken and egg.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Curry sauce on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "coffeeshop",
+      "restaurant"
+    ],
+    "tags": [
+      "hearty",
+      "late"
+    ]
+  },
+  {
+    "name": "Thosai with Sambar",
+    "cuisine": "South Indian",
+    "blurb": "Fermented rice crepe with lentil stew and chutneys.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sambar and chutney are dips — the thosai is plain.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "restaurant",
+      "hawker"
+    ],
+    "tags": [
+      "light",
+      "veg",
+      "breakfast"
+    ]
+  },
+  {
+    "name": "Briyani Ayam Madu",
+    "cuisine": "Indian-Muslim",
+    "blurb": "Honey-glazed chicken over briyani rice.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Glaze is on the chicken; sides separate.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "foodcourt",
+      "restaurant"
+    ],
+    "tags": [
+      "comfort"
+    ]
+  },
+  {
+    "name": "Palak Paneer with Rice",
+    "cuisine": "North Indian",
+    "blurb": "Spinach curry with cubes of fresh cheese.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Spinach and cream base.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "veg",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Mutton Curry with Chapati",
+    "cuisine": "South Indian",
+    "blurb": "Dark peppery mutton curry, thin wholemeal bread.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "A curry, not a condiment.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "hawker"
+    ],
+    "tags": [
+      "hearty",
+      "spicy"
+    ]
+  },
+  {
+    "name": "Roti John",
+    "cuisine": "Indian-Muslim",
+    "blurb": "Split baguette griddled with egg and minced meat.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "Comes slathered in mayo and chilli — ask for it plain.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "coffeeshop"
+    ],
+    "tags": [
+      "late",
+      "cheap"
+    ]
+  },
+  {
+    "name": "Pad Krapow Gai",
+    "cuisine": "Thai",
+    "blurb": "Chilli-basil minced chicken over rice with a fried egg.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Built on fish sauce, and usually oyster sauce too.",
+    "askFor": "No fish sauce, no oyster sauce — this changes the dish and many kitchens will say no.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Wok sauce, nothing added on top.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "spicy",
+      "quick"
+    ]
+  },
+  {
+    "name": "Green Curry Chicken",
+    "cuisine": "Thai",
+    "blurb": "Coconut green curry with chicken and aubergine.",
+    "seafood": "avoid",
+    "seafoodNote": "Green curry paste contains shrimp paste, and fish sauce is added on top.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "spicy",
+      "rich"
+    ]
+  },
+  {
+    "name": "Pad Thai",
+    "cuisine": "Thai",
+    "blurb": "Sweet-sour fried rice noodles with peanuts.",
+    "seafood": "avoid",
+    "seafoodNote": "Dried shrimp in the noodles, fish sauce and tamarind in the sauce.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "sweet"
+    ]
+  },
+  {
+    "name": "Thai Grilled Chicken (Gai Yang)",
+    "cuisine": "Thai",
+    "blurb": "Charcoal-grilled marinated chicken with sticky rice.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The marinade is fish-sauce based.",
+    "askFor": "Fish sauce in the marinade? It nearly always is.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Dipping sauce comes separately; the chicken is grilled dry.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "protein"
+    ]
+  },
+  {
+    "name": "Mango Sticky Rice",
+    "cuisine": "Thai",
+    "blurb": "Coconut sticky rice with ripe mango. Yes, as dinner.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing to skip.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "sweet",
+      "light"
+    ]
+  },
+  {
+    "name": "Pho Bo",
+    "cuisine": "Vietnamese",
+    "blurb": "Beef broth, flat rice noodles, herbs, brisket.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The broth is seasoned with fish sauce at almost every shop.",
+    "askFor": "Fish sauce in the broth? Usually yes — worth asking before you sit.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Hoisin and sriracha come on the side; the broth itself is clean-tasting.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "soup",
+      "comfort",
+      "light"
+    ]
+  },
+  {
+    "name": "Banh Mi",
+    "cuisine": "Vietnamese",
+    "blurb": "Baguette with pork, pâté, pickles and coriander.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Fish sauce in the pickle liquid and the meat marinade.",
+    "askFor": "No fish sauce, no mayo.",
+    "condiment": "spread_on",
+    "condimentNote": "Mayo and pâté are spread on the bread — ask for no mayo.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "foodcourt",
+      "restaurant"
+    ],
+    "tags": [
+      "quick",
+      "cheap"
+    ]
+  },
+  {
+    "name": "Com Tam (Broken Rice)",
+    "cuisine": "Vietnamese",
+    "blurb": "Grilled pork chop over broken rice with egg.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Nuoc cham dipping sauce is fish sauce, and the marinade often is too.",
+    "askFor": "Hold the nuoc cham; ask about the marinade.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "The dipping sauce is served separately.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "hearty"
+    ]
+  },
+  {
+    "name": "Korean Fried Chicken",
+    "cuisine": "Korean",
+    "blurb": "Double-fried chicken, soy-garlic or gochujang glaze.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Take the gochujang glaze, not the soy-garlic one.",
+    "takeaway": "eat_in_only",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "rich"
+    ]
+  },
+  {
+    "name": "Samgyeopsal",
+    "cuisine": "Korean",
+    "blurb": "Grill your own pork belly with lettuce and banchan.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Banchan often includes fermented seafood; some ssamjang has anchovy.",
+    "askFor": "Skip the seafood banchan and the ssamjang — the pork itself is clean.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Every sauce is on the table, not on the meat.",
+    "takeaway": "eat_in_only",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "occasion"
+    ]
+  },
+  {
+    "name": "Bibimbap",
+    "cuisine": "Korean",
+    "blurb": "Rice bowl with vegetables, beef and a fried egg.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Gochujang comes on the side and isn't on her list anyway.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "balanced",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Budae Jjigae",
+    "cuisine": "Korean",
+    "blurb": "Army stew — spam, sausage, ramyeon, kimchi.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The broth base is usually anchovy stock, and fish cake is standard.",
+    "askFor": "Anchovy stock is near-universal here.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Gochujang broth — none of her four.",
+    "takeaway": "eat_in_only",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "hearty"
+    ]
+  },
+  {
+    "name": "Tteokbokki",
+    "cuisine": "Korean",
+    "blurb": "Chewy rice cakes in sweet chilli sauce.",
+    "seafood": "avoid",
+    "seafoodNote": "Anchovy-kelp broth plus fish cake.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "snack",
+      "spicy"
+    ]
+  },
+  {
+    "name": "Chicken Katsu Curry",
+    "cuisine": "Japanese",
+    "blurb": "Panko chicken cutlet, Japanese curry, rice.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Japanese curry roux, not a condiment. The katsu is breaded and dry.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "comfort",
+      "kids"
+    ]
+  },
+  {
+    "name": "Chicken Karaage Don",
+    "cuisine": "Japanese",
+    "blurb": "Fried chicken over rice.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Comes with Japanese mayo — ask for it without.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "foodcourt",
+      "restaurant"
+    ],
+    "tags": [
+      "quick",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Yakitori Set",
+    "cuisine": "Japanese",
+    "blurb": "Charcoal chicken skewers, rice, pickles.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Some tare glazes are built on a dashi base.",
+    "askFor": "Order shio (salt) instead of tare — grilled plain, no dashi.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Shio version is completely dry.",
+    "takeaway": "travels_ok",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "light",
+      "shareable"
+    ]
+  },
+  {
+    "name": "Gyudon",
+    "cuisine": "Japanese",
+    "blurb": "Simmered beef and onion over rice.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The simmering liquid is dashi — bonito fish stock.",
+    "askFor": "Dashi is structural here. Not really removable.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Simmered in the sauce, not dressed.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt",
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "cheap"
+    ]
+  },
+  {
+    "name": "Tonkotsu Ramen",
+    "cuisine": "Japanese",
+    "blurb": "Pork bone broth, chashu, ajitama, thin noodles.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Many shops blend niboshi (dried sardine) or dashi into the tare.",
+    "askFor": "Is there any fish in the broth or tare? Pure tonkotsu shops exist — ask first.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Pork broth, not a sauce.",
+    "takeaway": "eat_in_only",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "rich",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Sushi / Chirashi",
+    "cuisine": "Japanese",
+    "blurb": "Raw fish over rice.",
+    "seafood": "avoid",
+    "seafoodNote": "Obviously.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "eat_in_only",
+    "priceBand": 3,
+    "venues": [
+      "restaurant",
+      "fastfood"
+    ],
+    "tags": [
+      "light"
+    ]
+  },
+  {
+    "name": "Udon in Broth",
+    "cuisine": "Japanese",
+    "blurb": "Thick wheat noodles in a clear soup.",
+    "seafood": "avoid",
+    "seafoodNote": "The broth is dashi — bonito and kombu.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "light",
+      "soup"
+    ]
+  },
+  {
+    "name": "Pepper Lunch Beef Pepper Rice",
+    "cuisine": "Japanese",
+    "blurb": "Raw beef, rice, corn and butter on a 260°C iron plate — you cook it yourself. Chicken and Hamburg versions too.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Honey Brown and Garlic Soy come in bottles on the table — nothing is poured on unless you do it.",
+    "takeaway": "eat_in_only",
+    "priceBand": 2,
+    "venues": [
+      "foodcourt",
+      "restaurant",
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "comfort",
+      "favourite"
+    ]
+  },
+  {
+    "name": "Mala Xiang Guo",
+    "cuisine": "Sichuan",
+    "blurb": "Pick your own ingredients by weight, wok-tossed in numbing chilli oil. Choose your spice level.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "You control the basket, but the wok and oil are shared with everyone else's prawns and squid — and some shop-made mala bases include dried shrimp.",
+    "askFor": "Fresh wok and clean oil, no seafood — shellfish allergy. At a busy stall assume the oil is shared; the risk is real even with a clean basket.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Chilli and Sichuan pepper, none of her four. Skip the black vinegar if they offer it.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "hawker",
+      "foodcourt",
+      "restaurant"
+    ],
+    "tags": [
+      "spicy",
+      "favourite",
+      "choice"
+    ]
+  },
+  {
+    "name": "Economic Rice (Cai Fan)",
+    "cuisine": "Chinese",
+    "blurb": "Point at two or three dishes over rice. The cheapest honest dinner in Singapore.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Seafood dishes share the counter, and most vegetable dishes are finished with oyster sauce.",
+    "askFor": "You choose the plate — skip anything seafood, and ask whether the veg has oyster sauce.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "You control exactly what lands on the plate.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt",
+      "coffeeshop"
+    ],
+    "tags": [
+      "cheap",
+      "choice",
+      "quick"
+    ]
+  },
+  {
+    "name": "Herbal Chicken Soup",
+    "cuisine": "Chinese",
+    "blurb": "Chicken simmered with wolfberry, red date and angelica root.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing added.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "hawker",
+      "foodcourt",
+      "coffeeshop"
+    ],
+    "tags": [
+      "soup",
+      "comfort",
+      "light"
+    ]
+  },
+  {
+    "name": "ABC Soup with Rice",
+    "cuisine": "Chinese",
+    "blurb": "Pork rib, potato, carrot and tomato soup. Plain and good.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing added.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "coffeeshop"
+    ],
+    "tags": [
+      "soup",
+      "light",
+      "cheap"
+    ]
+  },
+  {
+    "name": "Lotus Root & Pork Rib Soup",
+    "cuisine": "Chinese",
+    "blurb": "Long-simmered soup, faintly sweet from the root.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Dried cuttlefish or dried scallop is a common depth ingredient.",
+    "askFor": "Any dried cuttlefish or scallop in the soup?",
+    "condiment": "clean",
+    "condimentNote": "Nothing added.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "hawker",
+      "coffeeshop"
+    ],
+    "tags": [
+      "soup",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Marmite Chicken",
+    "cuisine": "Zi Char",
+    "blurb": "Fried chicken in a dark, sweet-savoury yeast glaze.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Glaze is cooked on.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "zichar",
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "rich"
+    ]
+  },
+  {
+    "name": "Coffee Pork Ribs",
+    "cuisine": "Zi Char",
+    "blurb": "Fried ribs in a sticky coffee caramel.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Cooked glaze, nothing added after.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "zichar",
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "rich"
+    ]
+  },
+  {
+    "name": "Black Pepper Beef",
+    "cuisine": "Zi Char",
+    "blurb": "Beef strips, onion and capsicum in coarse black pepper.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Oyster sauce is the usual base for the pepper gravy.",
+    "askFor": "No oyster sauce — shellfish allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Wok sauce.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "zichar",
+      "restaurant"
+    ],
+    "tags": [
+      "shareable"
+    ]
+  },
+  {
+    "name": "Hotplate Tofu",
+    "cuisine": "Zi Char",
+    "blurb": "Egg tofu with minced pork and gravy on a sizzling plate.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Prawns are usually in it, and the gravy is oyster-sauce based.",
+    "askFor": "No prawns, no oyster sauce — many kitchens will refuse.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Gravy is cooked.",
+    "takeaway": "eat_in_only",
+    "priceBand": 2,
+    "venues": [
+      "zichar"
+    ],
+    "tags": [
+      "shareable"
+    ]
+  },
+  {
+    "name": "French Bean with Minced Pork",
+    "cuisine": "Zi Char",
+    "blurb": "Blistered beans wok-tossed with pork and garlic.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Dried shrimp (hae bee) is the classic addition.",
+    "askFor": "No dried shrimp — shellfish allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Wok-tossed, nothing added.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "zichar"
+    ],
+    "tags": [
+      "veg",
+      "shareable"
+    ]
+  },
+  {
+    "name": "Sambal Kangkong",
+    "cuisine": "Zi Char",
+    "blurb": "Water spinach in chilli paste.",
+    "seafood": "avoid",
+    "seafoodNote": "The sambal is belacan — shrimp paste is what makes it sambal.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "zichar"
+    ],
+    "tags": [
+      "veg",
+      "spicy"
+    ]
+  },
+  {
+    "name": "Har Cheong Gai",
+    "cuisine": "Zi Char",
+    "blurb": "Chicken wings fried in fermented prawn paste batter.",
+    "seafood": "avoid",
+    "seafoodNote": "Prawn paste is the batter.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "zichar"
+    ],
+    "tags": [
+      "shareable"
+    ]
+  },
+  {
+    "name": "Xiao Long Bao",
+    "cuisine": "Shanghainese",
+    "blurb": "Soup dumplings, pork and hot broth in a thin skin.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Vinegar and ginger come in a dish — she just won't take it.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "shareable",
+      "light"
+    ]
+  },
+  {
+    "name": "Char Siew Bao",
+    "cuisine": "Cantonese",
+    "blurb": "Steamed buns filled with sweet barbecued pork.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "restaurant",
+      "foodcourt",
+      "hawker"
+    ],
+    "tags": [
+      "snack",
+      "cheap"
+    ]
+  },
+  {
+    "name": "Siew Mai & Har Gow",
+    "cuisine": "Cantonese",
+    "blurb": "The two dim sum everyone orders first.",
+    "seafood": "avoid",
+    "seafoodNote": "Har gow is prawn, and siew mai is topped with prawn or roe.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable"
+    ]
+  },
+  {
+    "name": "Chee Cheong Fun",
+    "cuisine": "Cantonese",
+    "blurb": "Silky steamed rice rolls in sweet and sesame sauce.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Many stalls fold dried shrimp into the rolls or the sauce.",
+    "askFor": "No dried shrimp — shellfish allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauce is poured in the kitchen.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt"
+    ],
+    "tags": [
+      "cheap",
+      "breakfast",
+      "light"
+    ]
+  },
+  {
+    "name": "Fried Carrot Cake",
+    "cuisine": "Teochew",
+    "blurb": "Cubes of radish cake fried with egg and preserved radish.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Dried shrimp is standard in the white version at most stalls.",
+    "askFor": "No dried shrimp — shellfish allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Cooked in the wok.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "cheap",
+      "breakfast"
+    ]
+  },
+  {
+    "name": "Oyster Omelette",
+    "cuisine": "Teochew",
+    "blurb": "Egg, starch and oysters, crisp at the edges.",
+    "seafood": "avoid",
+    "seafoodNote": "Oysters.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "rich"
+    ]
+  },
+  {
+    "name": "Popiah",
+    "cuisine": "Hokkien",
+    "blurb": "Soft rolls of stewed turnip, egg and peanut.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Dried shrimp is in the turnip filling almost everywhere.",
+    "askFor": "No dried shrimp in the filling — shellfish allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sweet sauce is spread inside — ask for light.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "light",
+      "snack"
+    ]
+  },
+  {
+    "name": "Yang Chow Fried Rice",
+    "cuisine": "Cantonese",
+    "blurb": "Egg fried rice with char siew and prawns.",
+    "seafood": "avoid",
+    "seafoodNote": "Prawns are a defining ingredient.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "zichar",
+      "restaurant"
+    ],
+    "tags": [
+      "shareable"
+    ]
+  },
+  {
+    "name": "Olive Fried Rice",
+    "cuisine": "Cantonese",
+    "blurb": "Fried rice with preserved olive leaf, minced pork and long bean.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Cooked in the wok.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "zichar",
+      "restaurant"
+    ],
+    "tags": [
+      "shareable"
+    ]
+  },
+  {
+    "name": "Beef La Mian",
+    "cuisine": "Chinese",
+    "blurb": "Hand-pulled noodles in clear beef broth with radish.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Chilli oil on the side.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "foodcourt",
+      "restaurant"
+    ],
+    "tags": [
+      "soup",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Hainanese Pork Chop",
+    "cuisine": "Hainanese",
+    "blurb": "Cracker-crumbed pork with peas and a tangy brown sauce.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauce is cooked and poured in the kitchen.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "hawker",
+      "restaurant"
+    ],
+    "tags": [
+      "comfort",
+      "retro"
+    ]
+  },
+  {
+    "name": "Braised Pork Belly Rice",
+    "cuisine": "Chinese",
+    "blurb": "Lu rou fan — soy-braised pork over rice with pickled greens.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Braised, not dressed.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "foodcourt",
+      "hawker"
+    ],
+    "tags": [
+      "cheap",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Chicken Macaroni Soup",
+    "cuisine": "Chinese",
+    "blurb": "Clear soup, macaroni, shredded chicken. Deliberately plain.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing added.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "coffeeshop"
+    ],
+    "tags": [
+      "light",
+      "comfort",
+      "sick-day"
+    ]
+  },
+  {
+    "name": "Steamboat",
+    "cuisine": "Chinese",
+    "blurb": "Cook it yourself at the table in a shared pot.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The pot is shared and seafood goes in it. For an allergy, a shared broth is the risk, not the basket.",
+    "askFor": "Split pot, and nothing seafood on your side — still not zero risk.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Dipping sauces are self-serve.",
+    "takeaway": "eat_in_only",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "occasion"
+    ]
+  },
+  {
+    "name": "Curry Chicken Noodles",
+    "cuisine": "Chinese",
+    "blurb": "Coconut curry broth, yellow noodles, chicken and puffs.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Some curry bases are built with dried shrimp, and cockles get added at a few stalls.",
+    "askFor": "No cockles, and check the curry base for dried shrimp.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Broth, not a condiment.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "coffeeshop"
+    ],
+    "tags": [
+      "spicy",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Bulgogi with Rice",
+    "cuisine": "Korean",
+    "blurb": "Sweet marinated beef, grilled and served over rice.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Marinade is cooked in.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "comfort",
+      "quick"
+    ]
+  },
+  {
+    "name": "Kimchi Jjigae",
+    "cuisine": "Korean",
+    "blurb": "Sour kimchi stew with pork belly and tofu.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Kimchi is nearly always fermented with jeotgal — shrimp or anchovy — and the stock is often anchovy.",
+    "askFor": "This one is hard to make safe. Vegan kimchi exists but is rare in restaurants.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Stew.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "spicy",
+      "comfort",
+      "soup"
+    ]
+  },
+  {
+    "name": "Doenjang Jjigae",
+    "cuisine": "Korean",
+    "blurb": "Soybean paste stew with tofu, courgette and pork.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The stock is usually anchovy-and-kelp.",
+    "askFor": "Anchovy stock in the base? Most places, yes.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Stew.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "soup",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Samgyetang",
+    "cuisine": "Korean",
+    "blurb": "Whole young chicken stuffed with rice and ginseng in clear broth.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Salt and pepper on the side, nothing else.",
+    "takeaway": "travels_ok",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "soup",
+      "occasion",
+      "light"
+    ]
+  },
+  {
+    "name": "Dakgalbi",
+    "cuisine": "Korean",
+    "blurb": "Chicken, cabbage and rice cake stir-fried in gochujang at the table.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Some marinades use anchovy stock or seafood extract for depth.",
+    "askFor": "Any seafood stock in the sauce?",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Gochujang, not on her list.",
+    "takeaway": "eat_in_only",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "spicy"
+    ]
+  },
+  {
+    "name": "Jjajangmyeon",
+    "cuisine": "Korean",
+    "blurb": "Thick noodles in black bean sauce with pork and onion.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Squid is a common addition and some sauces are seafood-stocked.",
+    "askFor": "Pork only, no squid — usually easy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauce is cooked and poured in the kitchen.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "comfort",
+      "cheap"
+    ]
+  },
+  {
+    "name": "Kimbap",
+    "cuisine": "Korean",
+    "blurb": "Seaweed rice rolls with egg, pickle, carrot and meat.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Crab stick and tuna are the two most common fillings.",
+    "askFor": "Beef or vegetable kimbap only — no crab stick, no tuna.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Nothing on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "light",
+      "quick",
+      "picnic"
+    ]
+  },
+  {
+    "name": "Korean Corn Dog",
+    "cuisine": "Korean",
+    "blurb": "Battered sausage and cheese, rolled in sugar.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "It arrives striped with ketchup and mustard — ask for it bare.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "foodcourt",
+      "fastfood"
+    ],
+    "tags": [
+      "snack",
+      "street"
+    ]
+  },
+  {
+    "name": "Chicken Teriyaki Don",
+    "cuisine": "Japanese",
+    "blurb": "Glazed grilled chicken over rice.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Glaze is brushed on during grilling.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "foodcourt",
+      "restaurant"
+    ],
+    "tags": [
+      "quick",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Japanese Curry Rice",
+    "cuisine": "Japanese",
+    "blurb": "Thick mild curry over rice, usually with a cutlet.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Curry roux, not a condiment.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "comfort",
+      "kids"
+    ]
+  },
+  {
+    "name": "Omurice",
+    "cuisine": "Japanese",
+    "blurb": "Omelette over fried rice.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "Ketchup is in the rice as well as across the top — ask them to leave the topping off.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "comfort",
+      "kids"
+    ]
+  },
+  {
+    "name": "Oyakodon",
+    "cuisine": "Japanese",
+    "blurb": "Chicken and egg simmered together over rice.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The simmering liquid is dashi — bonito stock.",
+    "askFor": "Dashi is structural. Not removable.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Simmered.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "comfort",
+      "quick"
+    ]
+  },
+  {
+    "name": "Tonkatsu Set",
+    "cuisine": "Japanese",
+    "blurb": "Panko pork cutlet, shredded cabbage, rice and pickles.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Tonkatsu sauce is Worcestershire-based, which means anchovy.",
+    "askFor": "Cutlet with salt or ponzu instead of tonkatsu sauce — the pork itself is clean.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauce is poured by you, at the table.",
+    "takeaway": "travels_ok",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "comfort",
+      "protein"
+    ]
+  },
+  {
+    "name": "Chicken Nanban",
+    "cuisine": "Japanese",
+    "blurb": "Fried chicken in sweet vinegar with tartar sauce.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "Tartar is mayonnaise, ladled over the chicken — ask for it on the side.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "rich"
+    ]
+  },
+  {
+    "name": "Wagyu Beef Don",
+    "cuisine": "Japanese",
+    "blurb": "Seared beef over rice with onsen egg.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The tare is usually dashi-based.",
+    "askFor": "Any dashi in the sauce? Ask for salt-seasoned if they offer it.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauce is cooked in.",
+    "takeaway": "travels_ok",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "occasion",
+      "protein"
+    ]
+  },
+  {
+    "name": "Shabu Shabu",
+    "cuisine": "Japanese",
+    "blurb": "Swish thin slices through hot broth at your table.",
+    "seafood": "avoid",
+    "seafoodNote": "The kombu-dashi broth and the shared pot both carry seafood.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "eat_in_only",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "occasion"
+    ]
+  },
+  {
+    "name": "Soba",
+    "cuisine": "Japanese",
+    "blurb": "Buckwheat noodles, hot or cold, with dipping broth.",
+    "seafood": "avoid",
+    "seafoodNote": "Tsuyu is dashi — bonito and kombu.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "light"
+    ]
+  },
+  {
+    "name": "Okonomiyaki",
+    "cuisine": "Japanese",
+    "blurb": "Savoury cabbage pancake with sauce and bonito.",
+    "seafood": "avoid",
+    "seafoodNote": "Bonito flakes on top, dashi in the batter, squid in most versions.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable"
+    ]
+  },
+  {
+    "name": "Khao Man Gai",
+    "cuisine": "Thai",
+    "blurb": "Thai chicken rice with a fermented soybean and ginger sauce.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauce arrives in its own dish.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "comfort",
+      "light"
+    ]
+  },
+  {
+    "name": "Moo Ping with Sticky Rice",
+    "cuisine": "Thai",
+    "blurb": "Charcoal pork skewers, coconut-marinated, with sticky rice.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Fish sauce is in the marinade.",
+    "askFor": "Fish sauce in the marinade? Almost always yes.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Nothing added after grilling.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "street",
+      "snack"
+    ]
+  },
+  {
+    "name": "Larb Gai",
+    "cuisine": "Thai",
+    "blurb": "Minced chicken with lime, chilli, mint and toasted rice.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Fish sauce is the salt in this dish.",
+    "askFor": "Soy instead of fish sauce — some kitchens will, most won't.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Dressed in the kitchen.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "light",
+      "spicy"
+    ]
+  },
+  {
+    "name": "Tom Kha Gai",
+    "cuisine": "Thai",
+    "blurb": "Coconut galangal chicken soup, sour and creamy.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Fish sauce is standard seasoning.",
+    "askFor": "No fish sauce — fish allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Soup.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "soup",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Pandan Chicken",
+    "cuisine": "Thai",
+    "blurb": "Marinated chicken wrapped in pandan leaf and fried.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Oyster and fish sauce are both usual in the marinade.",
+    "askFor": "No oyster sauce, no fish sauce in the marinade.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Nothing on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "snack",
+      "shareable"
+    ]
+  },
+  {
+    "name": "Bun Bo Hue",
+    "cuisine": "Vietnamese",
+    "blurb": "Spicy lemongrass beef noodle soup from central Vietnam.",
+    "seafood": "avoid",
+    "seafoodNote": "Shrimp paste is what gives the broth its character.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "spicy",
+      "soup"
+    ]
+  },
+  {
+    "name": "Bun Thit Nuong",
+    "cuisine": "Vietnamese",
+    "blurb": "Grilled pork over cold vermicelli with herbs and peanuts.",
+    "seafood": "avoid",
+    "seafoodNote": "Nuoc cham — fish sauce — is poured over the whole bowl.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "light",
+      "fresh"
+    ]
+  },
+  {
+    "name": "Chicken Tikka Masala",
+    "cuisine": "North Indian",
+    "blurb": "Grilled chicken in a spiced tomato cream sauce.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "A cooked curry, not a condiment.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "comfort",
+      "rich"
+    ]
+  },
+  {
+    "name": "Rogan Josh",
+    "cuisine": "North Indian",
+    "blurb": "Kashmiri lamb curry, deep red from chilli, not heat.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Curry.",
+    "takeaway": "travels_well",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "rich",
+      "occasion"
+    ]
+  },
+  {
+    "name": "Dal Makhani with Naan",
+    "cuisine": "North Indian",
+    "blurb": "Black lentils slow-cooked overnight with butter and cream.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Nothing on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "veg",
+      "comfort",
+      "rich"
+    ]
+  },
+  {
+    "name": "Chana Masala",
+    "cuisine": "North Indian",
+    "blurb": "Chickpeas in a tangy onion-tomato masala.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Curry.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "restaurant",
+      "hawker"
+    ],
+    "tags": [
+      "veg",
+      "cheap"
+    ]
+  },
+  {
+    "name": "Paneer Tikka",
+    "cuisine": "North Indian",
+    "blurb": "Charred marinated cheese and peppers off the tandoor.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Mint chutney in a bowl on the side.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "veg",
+      "light"
+    ]
+  },
+  {
+    "name": "Mutton Keema with Naan",
+    "cuisine": "North Indian",
+    "blurb": "Spiced minced mutton with peas.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Cooked, nothing added.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "hearty"
+    ]
+  },
+  {
+    "name": "Chicken Chettinad",
+    "cuisine": "South Indian",
+    "blurb": "Peppery Tamil chicken curry, dark with roasted spice.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Curry.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "spicy",
+      "hearty"
+    ]
+  },
+  {
+    "name": "Kothu Parotta",
+    "cuisine": "South Indian",
+    "blurb": "Parotta shredded on the griddle with egg, meat and curry.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Cooked together on the griddle.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "restaurant",
+      "hawker"
+    ],
+    "tags": [
+      "cheap",
+      "late",
+      "messy"
+    ]
+  },
+  {
+    "name": "Idli with Sambar",
+    "cuisine": "South Indian",
+    "blurb": "Steamed rice cakes with lentil stew and chutney.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sambar and chutney are dips.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "restaurant",
+      "hawker"
+    ],
+    "tags": [
+      "light",
+      "veg",
+      "breakfast"
+    ]
+  },
+  {
+    "name": "Appam with Coconut Milk",
+    "cuisine": "South Indian",
+    "blurb": "Lacy fermented rice pancakes with sweet coconut milk.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing to leave off.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "restaurant",
+      "hawker"
+    ],
+    "tags": [
+      "light",
+      "veg",
+      "breakfast"
+    ]
+  },
+  {
+    "name": "Indian Rojak",
+    "cuisine": "Indian-Muslim",
+    "blurb": "Fried fritters dunked in a thick sweet chilli sauce.",
+    "seafood": "avoid",
+    "seafoodNote": "Prawn fritters and cuttlefish are on the tray, and the sauce is shrimp-thickened.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "snack",
+      "street"
+    ]
+  },
+  {
+    "name": "Mee Soto",
+    "cuisine": "Malay",
+    "blurb": "Yellow noodles in spiced chicken broth with shredded chicken.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sambal on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt"
+    ],
+    "tags": [
+      "soup",
+      "light",
+      "cheap"
+    ]
+  },
+  {
+    "name": "Lontong",
+    "cuisine": "Malay",
+    "blurb": "Compressed rice cakes in coconut vegetable stew.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Sayur lodeh is usually built with dried shrimp, and serunding is often anchovy.",
+    "askFor": "Dried shrimp in the lodeh? Nearly always.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Stew, poured in the kitchen.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker"
+    ],
+    "tags": [
+      "breakfast",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Kurma Chicken with Rice",
+    "cuisine": "Malay",
+    "blurb": "Mild coconut and cashew curry, gently spiced.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Curry.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "foodcourt",
+      "restaurant"
+    ],
+    "tags": [
+      "comfort",
+      "mild"
+    ]
+  },
+  {
+    "name": "Ayam Masak Merah",
+    "cuisine": "Malay",
+    "blurb": "Fried chicken simmered in a sweet tomato chilli gravy.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Some cooks build the chilli base on belacan.",
+    "askFor": "Belacan in the gravy?",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Cooked gravy.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "foodcourt",
+      "restaurant"
+    ],
+    "tags": [
+      "comfort"
+    ]
+  },
+  {
+    "name": "Tahu Goreng",
+    "cuisine": "Indonesian",
+    "blurb": "Fried tofu with cucumber and thick peanut sauce.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Some peanut sauces are seasoned with shrimp paste.",
+    "askFor": "Belacan in the peanut sauce?",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauce is poured over.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt"
+    ],
+    "tags": [
+      "veg",
+      "cheap",
+      "light"
+    ]
+  },
+  {
+    "name": "Bakso",
+    "cuisine": "Indonesian",
+    "blurb": "Beef meatball soup with noodles and fried wonton.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Chilli and sweet soy are self-serve at the table.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "foodcourt",
+      "restaurant"
+    ],
+    "tags": [
+      "soup",
+      "cheap",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Nasi Ambeng",
+    "cuisine": "Javanese",
+    "blurb": "A shared tray of rice, chicken, beef, vegetables and serunding.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Serunding and sambal on the tray usually contain anchovy or dried shrimp.",
+    "askFor": "Skip the serunding and sambal — the rest of the tray is fine.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Everything is separate on the tray.",
+    "takeaway": "travels_well",
+    "priceBand": 3,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "shareable",
+      "occasion"
+    ]
+  },
+  {
+    "name": "Fish & Chips",
+    "cuisine": "Western",
+    "blurb": "Battered fish, fries, tartar.",
+    "seafood": "avoid",
+    "seafoodNote": "Fish.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": null,
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "comfort"
+    ]
+  },
+  {
+    "name": "Chicken Parmigiana",
+    "cuisine": "Italian",
+    "blurb": "Crumbed chicken under tomato and melted mozzarella.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Baked together, nothing added.",
+    "takeaway": "travels_ok",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "hearty",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Mac & Cheese",
+    "cuisine": "Western",
+    "blurb": "Baked pasta in a thick cheese sauce.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing to leave off.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "comfort",
+      "kids"
+    ]
+  },
+  {
+    "name": "Grilled Lamb Chops",
+    "cuisine": "Western",
+    "blurb": "Chops with mint, potatoes and greens.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauce comes on the side.",
+    "takeaway": "travels_ok",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "occasion",
+      "protein"
+    ]
+  },
+  {
+    "name": "Caesar Salad",
+    "cuisine": "Western",
+    "blurb": "Cos lettuce, parmesan, croutons, thick dressing.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Caesar dressing is built on anchovy.",
+    "askFor": "There's anchovy in the dressing — ask, most kitchens won't make it without.",
+    "condiment": "spread_on",
+    "condimentNote": "The dressing is mayonnaise-based and tossed through — ask for it on the side.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "light",
+      "salad"
+    ]
+  },
+  {
+    "name": "Club Sandwich",
+    "cuisine": "Western",
+    "blurb": "Triple-decker with chicken, egg, bacon and lettuce.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "Mayo is spread on every layer — ask for it dry.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "quick"
+    ]
+  },
+  {
+    "name": "Full English Breakfast",
+    "cuisine": "Western",
+    "blurb": "Eggs, sausage, bacon, beans, mushroom, toast. At dinner, why not.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Ketchup and brown sauce come in bottles on the table.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "hearty",
+      "breakfast"
+    ]
+  },
+  {
+    "name": "Buffalo Chicken Wings",
+    "cuisine": "Western",
+    "blurb": "Fried wings tossed in hot sauce.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "The blue cheese or ranch dip is a separate pot.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "snack"
+    ]
+  },
+  {
+    "name": "Shakshuka",
+    "cuisine": "Middle Eastern",
+    "blurb": "Eggs poached in spiced tomato and pepper, bread to dip.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing added.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "veg",
+      "comfort",
+      "breakfast"
+    ]
+  },
+  {
+    "name": "Lamb Kabsa",
+    "cuisine": "Middle Eastern",
+    "blurb": "Spiced rice baked with lamb, tomato and dried lime.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauces come in bowls.",
+    "takeaway": "travels_well",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "occasion",
+      "hearty"
+    ]
+  },
+  {
+    "name": "Manakish Za'atar",
+    "cuisine": "Middle Eastern",
+    "blurb": "Flatbread baked with thyme, sesame and olive oil.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing on it but herbs and oil.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "veg",
+      "cheap",
+      "snack"
+    ]
+  },
+  {
+    "name": "Chicken Gyro",
+    "cuisine": "Greek",
+    "blurb": "Shaved chicken, tomato, onion and tzatziki in pita.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Tzatziki is yoghurt and cucumber — not on her list, and it can be left out.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "quick",
+      "protein"
+    ]
+  },
+  {
+    "name": "Beef Burrito",
+    "cuisine": "Mexican",
+    "blurb": "Rice, beans, beef and salsa rolled in a flour tortilla.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Salsa and sour cream, not mayo or ketchup. You pick the fillings.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt",
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "hearty",
+      "choice"
+    ]
+  },
+  {
+    "name": "Chicken Quesadilla",
+    "cuisine": "Mexican",
+    "blurb": "Griddled tortilla folded over chicken and melted cheese.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Dips on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "quick",
+      "shareable"
+    ]
+  },
+  {
+    "name": "Loaded Nachos",
+    "cuisine": "Mexican",
+    "blurb": "Corn chips under cheese, beans, jalapeño and beef.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sour cream and guacamole in separate pots.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "snack"
+    ]
+  },
+  {
+    "name": "Babi Pongteh",
+    "cuisine": "Peranakan",
+    "blurb": "Pork braised with fermented soy bean and mushroom.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Slow-braised in taucheo.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "comfort",
+      "rich"
+    ]
+  },
+  {
+    "name": "Itek Tim",
+    "cuisine": "Peranakan",
+    "blurb": "Salted vegetable and duck soup, sour and savoury.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing added.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "soup",
+      "light"
+    ]
+  },
+  {
+    "name": "Ayam Buah Keluak",
+    "cuisine": "Peranakan",
+    "blurb": "Chicken with black nuts in a deep rempah gravy.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Most rempah recipes include belacan.",
+    "askFor": "Belacan in the rempah? Usually yes.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Rempah and black nut — none of her four.",
+    "takeaway": "travels_ok",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "occasion",
+      "rich"
+    ]
+  },
+  {
+    "name": "Chicken Chop",
+    "cuisine": "Western",
+    "blurb": "Grilled chicken thigh, fries, coleslaw, black pepper sauce.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauce on the side, coleslaw is mayo — swap it for salad.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "hawker",
+      "coffeeshop",
+      "foodcourt"
+    ],
+    "tags": [
+      "comfort",
+      "cheap"
+    ]
+  },
+  {
+    "name": "Ribeye Steak",
+    "cuisine": "Western",
+    "blurb": "Steak, fries, whatever green they give you.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauces come separately.",
+    "takeaway": "eat_in_only",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "occasion",
+      "protein"
+    ]
+  },
+  {
+    "name": "Roast Chicken & Sides",
+    "cuisine": "Western",
+    "blurb": "Half a roast chicken with potatoes and greens.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Gravy on the side.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "comfort",
+      "protein"
+    ]
+  },
+  {
+    "name": "Carbonara",
+    "cuisine": "Italian",
+    "blurb": "Egg, pecorino, guanciale, black pepper. No cream.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing to skip.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "rich",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Bolognese",
+    "cuisine": "Italian",
+    "blurb": "Slow beef and tomato ragù over pasta.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Slow tomato ragù, closer to a braise than a sauce.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt",
+      "fastfood"
+    ],
+    "tags": [
+      "comfort"
+    ]
+  },
+  {
+    "name": "Aglio Olio",
+    "cuisine": "Italian",
+    "blurb": "Garlic, chilli and olive oil pasta.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Many kitchens melt anchovy into the oil for depth.",
+    "askFor": "No anchovy in the oil — fish allergy.",
+    "condiment": "clean",
+    "condimentNote": "Just oil and garlic.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "light",
+      "quick"
+    ]
+  },
+  {
+    "name": "Margherita Pizza",
+    "cuisine": "Italian",
+    "blurb": "Tomato, mozzarella, basil.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "clean",
+    "condimentNote": "Nothing on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "fastfood"
+    ],
+    "tags": [
+      "shareable",
+      "kids"
+    ]
+  },
+  {
+    "name": "Beef Burger",
+    "cuisine": "Western",
+    "blurb": "Patty, cheese, bun, fries.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "Ketchup and mayo are spread inside — ask for it dry, cheese only.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Chicken Shawarma Plate",
+    "cuisine": "Middle Eastern",
+    "blurb": "Shaved chicken, rice or bread, salad, garlic toum.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Toum and chilli come on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "quick",
+      "protein"
+    ]
+  },
+  {
+    "name": "Lamb Mandi",
+    "cuisine": "Middle Eastern",
+    "blurb": "Slow-smoked lamb over spiced long-grain rice.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauces come in bowls, not on the rice.",
+    "takeaway": "travels_well",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "occasion",
+      "hearty",
+      "shareable"
+    ]
+  },
+  {
+    "name": "Falafel Wrap",
+    "cuisine": "Middle Eastern",
+    "blurb": "Chickpea fritters, salad, tahini in flatbread.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Tahini is sesame. Ask for it light if she wants.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "restaurant",
+      "foodcourt"
+    ],
+    "tags": [
+      "veg",
+      "quick"
+    ]
+  },
+  {
+    "name": "Mixed Grill Platter",
+    "cuisine": "Middle Eastern",
+    "blurb": "Lamb, chicken and kofta skewers with rice and salad.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Everything's grilled dry; sauces on the side.",
+    "takeaway": "eat_in_only",
+    "priceBand": 3,
+    "venues": [
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "protein",
+      "occasion"
+    ]
+  },
+  {
+    "name": "McSpicy",
+    "cuisine": "Western",
+    "blurb": "Fried chicken thigh fillet with a spicy sauce in a sesame bun.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "The spicy sauce is spread across the bun — ask for it without.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "spicy"
+    ]
+  },
+  {
+    "name": "Big Mac",
+    "cuisine": "Western",
+    "blurb": "Two beef patties, shredded lettuce and the sauce, in a three-layer bun.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "Big Mac sauce is mayo-based and goes on every layer — ask for no sauce.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Chicken McNuggets",
+    "cuisine": "Western",
+    "blurb": "Breaded chicken pieces with a tub of dip.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Every dip comes in its own tub — just don't open one.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "kids",
+      "snack"
+    ]
+  },
+  {
+    "name": "Filet-O-Fish",
+    "cuisine": "Western",
+    "blurb": "Crumbed white fish and tartar sauce in a steamed bun.",
+    "seafood": "avoid",
+    "seafoodNote": "The patty is fish.",
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "Tartar is mayonnaise, spread on the bun.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick"
+    ]
+  },
+  {
+    "name": "KFC Original Recipe Chicken",
+    "cuisine": "Western",
+    "blurb": "Pressure-fried chicken in the eleven-spice crust, with coleslaw.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Coleslaw is mayo-dressed but sits in its own tub — leave it closed.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "comfort",
+      "hearty"
+    ]
+  },
+  {
+    "name": "Zinger Burger",
+    "cuisine": "Western",
+    "blurb": "Crumbed chicken fillet, lettuce and mayo in a sesame bun.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "Mayo is spread on the bun — ask for it dry.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "spicy"
+    ]
+  },
+  {
+    "name": "Whopper",
+    "cuisine": "Western",
+    "blurb": "Flame-grilled beef with tomato, lettuce, mayo and ketchup.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "Both mayo and ketchup go on the bun — ask for neither.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "hearty"
+    ]
+  },
+  {
+    "name": "Popeyes Louisiana Chicken",
+    "cuisine": "Western",
+    "blurb": "Buttermilk-battered fried chicken, cajun-seasoned, with a biscuit.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Dips and gravy all come on the side.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "comfort",
+      "hearty",
+      "spicy"
+    ]
+  },
+  {
+    "name": "Popeyes Chicken Sandwich",
+    "cuisine": "Western",
+    "blurb": "A whole fried thigh, pickles and mayo in a brioche bun.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "Mayo is spread thick — ask for it plain, just the pickles.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick"
+    ]
+  },
+  {
+    "name": "Texas Chicken with Honey-Butter Biscuit",
+    "cuisine": "Western",
+    "blurb": "Fried chicken with the honey-butter biscuit it is actually famous for.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Honey butter is for the biscuit, served apart.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "comfort",
+      "hearty"
+    ]
+  },
+  {
+    "name": "Chickenjoy",
+    "cuisine": "Filipino",
+    "blurb": "Crisp-skinned fried chicken with gravy and rice.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Gravy comes in its own tub — pour it or don't.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "comfort",
+      "hearty"
+    ]
+  },
+  {
+    "name": "Jolly Spaghetti",
+    "cuisine": "Filipino",
+    "blurb": "Sweet tomato sauce, sliced hotdog and grated cheese.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "The sweet sauce is cooked in, nothing squeezed on top.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "kids",
+      "sweet",
+      "cheap"
+    ]
+  },
+  {
+    "name": "Palabok Fiesta",
+    "cuisine": "Filipino",
+    "blurb": "Rice noodles under a thick orange sauce with egg and pork crackling.",
+    "seafood": "avoid",
+    "seafoodNote": "The orange sauce is built on prawn stock, and prawns go on top.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sauce is ladled in the kitchen.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "rich"
+    ]
+  },
+  {
+    "name": "MOS Burger",
+    "cuisine": "Japanese",
+    "blurb": "Grilled beef patty under MOS's tomato-meat sauce in a soft bun.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "The meat sauce is ladled over the patty — ask for it plain if you want it neat.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "comfort"
+    ]
+  },
+  {
+    "name": "MOS Ebi Burger",
+    "cuisine": "Japanese",
+    "blurb": "A patty of whole prawns, crumbed and fried.",
+    "seafood": "avoid",
+    "seafoodNote": "The patty is prawn.",
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "Dressed with a mayo-based sauce as well.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick"
+    ]
+  },
+  {
+    "name": "Teriyaki Chicken Burger",
+    "cuisine": "Japanese",
+    "blurb": "Grilled chicken thigh in teriyaki glaze with shredded lettuce.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Japanese teriyaki glazes are often built on dashi, which is bonito stock.",
+    "askFor": "Is there dashi or bonito in the teriyaki? Seafood allergy.",
+    "condiment": "spread_on",
+    "condimentNote": "Glaze and mayo both go on inside — ask for no mayo.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick"
+    ]
+  },
+  {
+    "name": "Long John Silver's Fish Platter",
+    "cuisine": "Western",
+    "blurb": "Battered fish, fries and hush puppies from the seafood chain.",
+    "seafood": "avoid",
+    "seafoodNote": "Fish is the whole menu, and every fryer in the shop has had it through.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Tartar and malt vinegar come in packets.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "rich"
+    ]
+  },
+  {
+    "name": "A&W Coney Dog",
+    "cuisine": "Western",
+    "blurb": "Beef hotdog under a thick chilli-meat sauce and shredded cheese.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "The chilli is the dish here, not a condiment.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "retro"
+    ]
+  },
+  {
+    "name": "Subway Roast Chicken Sub",
+    "cuisine": "Western",
+    "blurb": "Roast chicken, salad and your pick of sauce in a foot of bread.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The Caesar dressing is anchovy-based. None of the others are.",
+    "askFor": "No Caesar dressing — anchovy, seafood allergy.",
+    "condiment": "spread_on",
+    "condimentNote": "You watch every sauce go on, so this is the easiest thing in Singapore to order plain.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick",
+      "light"
+    ]
+  },
+  {
+    "name": "Subway Seafood Sensation",
+    "cuisine": "Western",
+    "blurb": "Crab stick blended with mayonnaise, in a sub.",
+    "seafood": "avoid",
+    "seafoodNote": "It is crab stick and mayonnaise — shellfish, mixed all the way through.",
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "The filling is already mayo.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "quick"
+    ]
+  },
+  {
+    "name": "ShackBurger",
+    "cuisine": "Western",
+    "blurb": "Smashed beef patty, cheese and ShackSauce in a potato bun.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "ShackSauce is mayo-based and spread on the bun — ask for it without.",
+    "takeaway": "travels_ok",
+    "priceBand": 3,
+    "venues": [
+      "fastfood",
+      "restaurant"
+    ],
+    "tags": [
+      "occasion",
+      "quick"
+    ]
+  },
+  {
+    "name": "Five Guys Cheeseburger",
+    "cuisine": "Western",
+    "blurb": "Two smashed patties with as many free toppings as you point at.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "spread_on",
+    "condimentNote": "You choose every topping — just don't point at the mayo or the ketchup.",
+    "takeaway": "travels_ok",
+    "priceBand": 3,
+    "venues": [
+      "fastfood",
+      "restaurant"
+    ],
+    "tags": [
+      "occasion",
+      "hearty"
+    ]
+  },
+  {
+    "name": "Wingstop Wings",
+    "cuisine": "Western",
+    "blurb": "Bone-in wings tossed in the rub or sauce you pick.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Ranch and cheese dips come in tubs on the side.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "fastfood"
+    ],
+    "tags": [
+      "shareable",
+      "spicy",
+      "messy"
+    ]
+  },
+  {
+    "name": "Nando's Peri-Peri Chicken",
+    "cuisine": "Western",
+    "blurb": "Flame-grilled chicken basted in peri-peri, heat to order.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Extra peri-peri lives on the table, not on the bird.",
+    "takeaway": "travels_ok",
+    "priceBand": 3,
+    "venues": [
+      "fastfood",
+      "restaurant"
+    ],
+    "tags": [
+      "protein",
+      "spicy",
+      "occasion"
+    ]
+  },
+  {
+    "name": "Pepperoni Pizza",
+    "cuisine": "Italian",
+    "blurb": "Tomato, mozzarella and cured pepperoni, delivered hot.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Chilli flakes and garlic oil come in sachets.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "fastfood",
+      "restaurant"
+    ],
+    "tags": [
+      "shareable",
+      "comfort"
+    ]
+  },
+  {
+    "name": "Old Chang Kee Curry Puff",
+    "cuisine": "Malay",
+    "blurb": "Curried potato, chicken and half an egg in a fried pastry shell.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The same fryers turn out sotong balls and prawn nuggets all day.",
+    "askFor": "Is this fried in the same oil as the sotong? Shellfish allergy.",
+    "condiment": "clean",
+    "condimentNote": "Nothing goes on it.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "fastfood",
+      "foodcourt"
+    ],
+    "tags": [
+      "snack",
+      "cheap",
+      "quick"
+    ]
+  },
+  {
+    "name": "4Fingers Crispy Chicken",
+    "cuisine": "Korean",
+    "blurb": "Twice-fried chicken lacquered in soy garlic or hot sauce, with kimchi slaw.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Korean soy-garlic glazes commonly carry anchovy or oyster sauce, and the kimchi slaw is fermented with shrimp.",
+    "askFor": "Anchovy or oyster sauce in the soy garlic? And hold the kimchi slaw — seafood allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "The glaze is brushed on in the kitchen.",
+    "takeaway": "travels_ok",
+    "priceBand": 2,
+    "venues": [
+      "fastfood",
+      "foodcourt"
+    ],
+    "tags": [
+      "spicy",
+      "shareable"
+    ]
+  },
+  {
+    "name": "Wok Hey Fried Rice",
+    "cuisine": "Chinese",
+    "blurb": "Wok-fried rice torched to order at a mall counter.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "The house sauce is oyster-based, and prawn is one of the standard mix-ins.",
+    "askFor": "No oyster sauce and no prawn — shellfish allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Everything goes in the wok, nothing on top.",
+    "takeaway": "travels_well",
+    "priceBand": 1,
+    "venues": [
+      "fastfood",
+      "foodcourt"
+    ],
+    "tags": [
+      "quick",
+      "cheap"
+    ]
+  },
+  {
+    "name": "Kaya Toast Set",
+    "cuisine": "Hainanese",
+    "blurb": "Charcoal toast with kaya and cold butter, two soft-boiled eggs, kopi.",
+    "seafood": "clear",
+    "seafoodNote": null,
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Dark soy and white pepper for the eggs come separately.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "fastfood",
+      "coffeeshop",
+      "foodcourt"
+    ],
+    "tags": [
+      "breakfast",
+      "cheap",
+      "light"
+    ]
+  },
+  {
+    "name": "Chicken Grain Bowl",
+    "cuisine": "Western",
+    "blurb": "Grilled chicken over grains and greens, dressing on the side.",
+    "seafood": "hidden_risk",
+    "seafoodNote": "Salad-counter dressings hide fish sauce in the Thai ones and anchovy in the Caesar.",
+    "askFor": "What's in the dressing? No fish sauce or anchovy — seafood allergy.",
+    "condiment": "side_or_cooked",
+    "condimentNote": "Dressing arrives in its own cup.",
+    "takeaway": "travels_well",
+    "priceBand": 2,
+    "venues": [
+      "fastfood",
+      "restaurant"
+    ],
+    "tags": [
+      "light",
+      "protein"
+    ]
+  },
+  {
+    "name": "Laksa",
+    "cuisine": "Peranakan",
+    "blurb": "Rice noodles in coconut curry gravy with cockles and prawns.",
+    "seafood": "avoid",
+    "seafoodNote": "Prawn stock base, cockles and prawns in the bowl, dried shrimp in the rempah.",
+    "askFor": null,
+    "condiment": "side_or_cooked",
+    "condimentNote": "Sambal comes on the side.",
+    "takeaway": "travels_ok",
+    "priceBand": 1,
+    "venues": [
+      "hawker",
+      "foodcourt",
+      "fastfood"
+    ],
+    "tags": [
+      "rich",
+      "spicy"
+    ]
+  }
 ]

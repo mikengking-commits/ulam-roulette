@@ -175,6 +175,7 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 .dlg-head p{margin:6px 0 0; font-size:13px; color:var(--ink-2)}
 form.add{padding:16px; display:flex; flex-direction:column; gap:13px; overflow-y:auto; max-height:70vh}
 .field{display:flex; flex-direction:column; gap:6px; min-width:0}
+[hidden]{display:none !important}   /* .field's display would otherwise win over it */
 .pair{display:grid; grid-template-columns:1fr 1fr; gap:10px}
 input[type=text],textarea{font-family:inherit; font-size:14px; color:var(--ink); background:var(--card-2);
   border:1px solid var(--line-strong); border-radius:7px; padding:9px 11px; width:100%}
@@ -201,7 +202,7 @@ textarea{resize:vertical; min-height:56px}
   <header class="mast">
     <div>
       <h1>Ulam<br><em>Roulette</em></h1>
-      <p id="tagline">Dinner, decided. Screened for Mike&rsquo;s seafood allergy and her no-mayo-no-ketchup rule.</p>
+      <p id="tagline">Dinner, decided. Screened for Mike&rsquo;s seafood allergy, with the words to say at the stall.</p>
     </div>
     <button class="iconbtn" id="theme" title="Switch theme" aria-label="Switch theme">
       <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.6v10.8a5.4 5.4 0 0 1 0-10.8Z"/></svg>
@@ -219,9 +220,8 @@ textarea{resize:vertical; min-height:56px}
     <div>
       <span class="lbl">Who&rsquo;s eating</span>
       <div class="seg" id="party" role="group" aria-label="Who is eating">
-        <button data-party="both" aria-pressed="true">Both of us<small>strictest filter</small></button>
-        <button data-party="mike" aria-pressed="false">Mike only<small>no seafood</small></button>
-        <button data-party="wife" aria-pressed="false">Wife only<small>no mayo or ketchup</small></button>
+        <button data-party="both" aria-pressed="true">Mike&rsquo;s eating<small>seafood screened</small></button>
+        <button data-party="grace" aria-pressed="false">Grace only<small>seafood unlocked</small></button>
       </div>
     </div>
     <div>
@@ -240,8 +240,8 @@ textarea{resize:vertical; min-height:56px}
         <button data-mode="out" aria-pressed="false">Taking away<small>only what survives</small></button>
       </div>
     </div>
-    <p class="hint">Her rule is applied automatically: anything spread with mayonnaise or ketchup is filtered
-      out. Cooked-in soy, vinegar, curry and chilli all stay.</p>
+    <p class="hint">Nothing is filtered out for Grace any more &mdash; she asks at the counter instead. Where mayo
+      or ketchup is spread on rather than served beside, the card tells her what to ask for.</p>
   </div>
 
   <main id="result" aria-live="polite"></main>
@@ -295,11 +295,11 @@ textarea{resize:vertical; min-height:56px}
     <div class="field"><span class="lbl">Condiments</span>
       <select name="condiment">
         <option value="clean">Nothing to leave off</option>
-        <option value="side_or_cooked" selected>On the side, or cooked in — fine for her</option>
-        <option value="spread_on">Mayo or ketchup spread on it — she skips this</option>
+        <option value="side_or_cooked" selected>On the side, or cooked in — nothing to ask</option>
+        <option value="spread_on">Mayo or ketchup spread on — Grace has to ask</option>
       </select></div>
-    <label class="field"><span class="lbl">Condiment note (optional)</span>
-      <input type="text" name="condimentNote" maxlength="400" placeholder="Chilli comes in a saucer."></label>
+    <label class="field"><span class="lbl">What Grace should ask for (optional)</span>
+      <input type="text" name="condimentNote" maxlength="400" placeholder="Mayo is spread on the bun — ask for it dry."></label>
 
     <div class="pair">
       <div class="field"><span class="lbl">Travels?</span>
@@ -363,7 +363,10 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":
 
 let state = {
   zone: ls.get(K.zone, "woodlands"),
-  party: ls.get(K.party, "both"),
+  // "wife"/"mike" are the old three-way values; anything that isn't Grace alone
+  // means Mike is at the table, which is the only thing the filter cares about.
+  party: ls.get(K.party, "both") === "wife" ? "grace"
+       : ls.get(K.party, "both") === "grace" ? "grace" : "both",
   mode: ls.get(K.mode, "in"),
   price: ls.get(K.price, "any"),
   log: ls.get(K.log, []),
@@ -386,15 +389,14 @@ function recentNames(){
 }
 
 function eligible(){
-  const mike = state.party === "both" || state.party === "mike";
-  const wife = state.party === "both" || state.party === "wife";
+  const mike = state.party !== "grace";
   const recent = recentNames();
   return DISHES.filter(d => {
-    // Mike's allergy is the only hard exclusion. Hidden-risk dishes DO surface,
-    // carrying the words to say at the counter — that judgement is his to make
-    // at the stall, not the app's to make for him.
+    // Mike's allergy is the only hard exclusion, and only when he is eating.
+    // Hidden-risk dishes DO surface, carrying the words to say at the counter —
+    // that judgement is his to make at the stall, not the app's to make for him.
+    // Grace's condiments now work the same way: noted on the card, never filtered.
     if (mike && d.seafood === "avoid") return false;
-    if (wife && d.condiment === "spread_on") return false;
     if (state.mode === "out" && d.takeaway === "eat_in_only") return false;
     if (state.price !== "any" && d.priceBand !== Number(state.price)) return false;
     if (recent.has(d.name)) return false;
@@ -426,23 +428,31 @@ function render(){
     return;
   }
 
-  const m = verdictMike(d);
-  const showM = state.party !== "wife", showW = state.party !== "mike";
   const stamp = new Date().toLocaleDateString("en-SG", {day:"2-digit", month:"short"}).toUpperCase();
-  const partyLabel = {both:"TABLE FOR 2", mike:"MIKE", wife:"WIFE"}[state.party];
-  const venueKind = d.venues.includes("hawker") ? "HAWKER"
+  const partyLabel = {both:"TABLE FOR 2", grace:"GRACE"}[state.party];
+  const venueKind = d.venues.includes("fastfood") ? "FAST FOOD"
+                  : d.venues.includes("hawker") ? "HAWKER"
+                  : d.venues.includes("zichar") ? "ZI CHAR"
                   : d.venues.includes("restaurant") ? "SIT-DOWN" : "FOOD COURT";
 
   let v = "";
-  if (showM) v += `<div class="v ${m.cls}"><span class="v-dot"></span><div>`
-    + `<div class="v-who">Mike &middot; seafood</div><p class="v-txt">${esc(m.txt)}</p>`
-    + (m.ask ? `<p class="v-ask">&ldquo;${esc(m.ask)}&rdquo;</p>` : "") + `</div></div>`;
-  if (showW){
-    const wCls = d.condiment === "spread_on" ? "warn" : "ok";
-    const wTxt = d.condimentNote || "Nothing she needs to leave off.";
-    v += `<div class="v ${wCls}"><span class="v-dot"></span><div>`
-       + `<div class="v-who">Wife &middot; condiments</div><p class="v-txt">${esc(wTxt)}</p></div></div>`;
+  if (state.party === "grace"){
+    // Nothing to screen when she eats alone — so the row says what's in it
+    // rather than whether she may have it.
+    v += `<div class="v ok"><span class="v-dot"></span><div><div class="v-who">Grace &middot; solo</div>`
+       + `<p class="v-txt">${esc(d.seafoodNote || "Nothing to screen tonight. Order it however you like.")}</p>`
+       + `</div></div>`;
+  } else {
+    const m = verdictMike(d);
+    v += `<div class="v ${m.cls}"><span class="v-dot"></span><div>`
+       + `<div class="v-who">Mike &middot; seafood</div><p class="v-txt">${esc(m.txt)}</p>`
+       + (m.ask ? `<p class="v-ask">&ldquo;${esc(m.ask)}&rdquo;</p>` : "") + `</div></div>`;
   }
+  // Grace's row only earns its place when there is actually something to ask for.
+  if (d.condiment === "spread_on" && d.condimentNote)
+    v += `<div class="v warn"><span class="v-dot"></span><div>`
+       + `<div class="v-who">Grace &middot; ask for it plain</div>`
+       + `<p class="v-txt">${esc(d.condimentNote)}</p></div></div>`;
 
   const venues = zone.venues.map(x =>
     `<li><a href="${mapsUrl(d.name, zone)}" target="_blank" rel="noopener">`

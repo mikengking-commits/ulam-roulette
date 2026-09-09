@@ -81,9 +81,26 @@ distinct dishes, logging a meal persisted and came back on the API, the match co
 decremented 136 → 135, and 25 further spins never re-offered the logged dish. The
 filter logic in `index.html` is a direct port of that same logic.
 
-Catalogue integrity re-checked at export: 166 dishes, 25 cuisines, 89 clear / 55
-hidden-risk / 22 avoid, 8 blocked by the condiment rule, 12 eat-in-only, and zero rows
-where a seafood warning is missing its reason or its counter phrase.
+Catalogue integrity re-checked after the fast-food expansion: 197 dishes, 26 cuisines,
+108 clear / 61 hidden-risk / 28 avoid, 39 available from a fast-food chain, 12
+eat-in-only, and zero rows where a seafood warning is missing its reason or its counter
+phrase. `data/dishes.sql` is regenerated from `data/dishes.json` whenever the catalogue
+changes, so the two stay a true mirror.
+
+## Changes since launch (2026-09-09)
+
+**Grace's condiment rule stopped being a filter.** She'd rather ask at the counter than
+have dishes silently removed, so `condiment: spread_on` no longer excludes anything — it
+just puts a line on the card with the words for the ask. Eight dishes came back into the
+pool. The "who's eating" control collapsed from three buttons to two as a result: once
+Grace has no restriction, "Both of us" and "Mike only" filtered identically, so the only
+question left is whether Mike is at the table. "Grace only" now unlocks the 28 `avoid`
+dishes for her.
+
+**Fast food went in.** 31 new dishes across the chains, plus six existing dishes retagged
+as chain-available. The seafood screening matters more here than anywhere: Jollibee's
+palabok is prawn-stock, Subway's Seafood Sensation is crab stick, MOS does an ebi burger,
+and Old Chang Kee fries its curry puffs in the same oil as the sotong.
 
 Not yet verified: the Firebase paths (`meals` and `customDishes` reads/writes) have
 never run against a real project, because no Firebase project exists yet. Expect to
